@@ -1,0 +1,47 @@
+:root {
+  --main-bg: #0e8784;
+  --main-black: #333d4b;
+  --main-white: #fefcf7;
+  --main-grey: #83888f;
+}
+.header {
+  width: 100vw;
+  /* temporary */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.nav {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logoImg {
+  height: 1.5rem;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-link {
+  list-style: none;
+  font-size: 2rem;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+}
+
+.menu-link:hover {
+  background-color: var(--main-white);
+  color: var(--main-bg);
+}
