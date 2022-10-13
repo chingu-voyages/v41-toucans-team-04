@@ -1,12 +1,17 @@
+import "./Header.css";
+import coffeeBean from "../assets/icon-coffee-bean.svg";
 export default function Header() {
   return (
-    <header id="header">
-      <h1>COFFEE</h1>
-      <nav id="gnb">
+    <header id="header" className="header">
+      <nav id="gnb" className="nav">
+        <h1 className="logo">
+          <img src={coffeeBean} className="logoImg" />
+          Coffee Direct
+        </h1>
         <ul className="menu">
-          <li>About us</li>
-          <li>Menu</li>
-          <li>Shopping</li>
+          <li className="menu-link">About</li>
+          <li className="menu-link">Menu</li>
+          <li className="menu-link">Shopping</li>
         </ul>
       </nav>
     </header>
