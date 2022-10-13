@@ -1,0 +1,58 @@
+{
+  "coffees": [
+    {
+      "name": "Piccollo",
+      "description": "Stronger than a flat white, 1:2 espresso: textured milk",
+      "ingredients": "espresso, milk",
+      "price": 3
+    },
+    {
+      "name": "Espresso Macchiato",
+      "description": "espresso 'marked' with a little textured milk",
+      "ingredients": "espresso, milk",
+      "price": 3.2
+    },
+    {
+      "name": "Mocha",
+      "description": "espresso and house hot chocolate with textured steamed milk",
+      "ingredients": "espresso, hot chocolate, milk ",
+      "price": 3
+    },
+    {
+      "name": "Long Black",
+      "description": "Our long blacks keep their strength through the sizes - a double espresso for a small, three for a medium and four for a large",
+      "ingredients": "espresso, water ",
+      "price": 3
+    },
+    {
+      "name": "Latte",
+      "description": "A double espresso with steamed textured milk",
+      "ingredients": "espresso, milk",
+      "price": 4
+    },
+    {
+      "name": "Flat White",
+      "description": "We're unique in serving flat whites through the sizes. We keep the ratio of coffee:milk the same - a double espresso in small, three for a medium, four for a large.",
+      "ingredients": "espresso, milk",
+      "price": 3.5
+    },
+    {
+      "name": "Filter",
+      "description": "Our seasonally sourced, single origin filter coffee, batch brewed freshly.",
+      "ingredients": "filter coffee",
+      "price": 2.8
+    },
+    {
+      "name": "Cappuccino",
+      "description": "A double espresso with steamed and stretched textured milk",
+      "ingredients": "espresso, milk",
+      "price": 4
+    },
+    {
+      "name": "Espresso",
+      "description": "Our regularly-changing single origin espresso - balanced and sweet.",
+      "ingredients": "house espresso, milk",
+      "price": 3
+    }
+  ]
+}
