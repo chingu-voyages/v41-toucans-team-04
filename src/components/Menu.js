@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 // import data from "../assets/data.json";
-import "../css/Menu.css";
 import axios from "axios";
 import Card from "./Card";
 export default function Menu() {
