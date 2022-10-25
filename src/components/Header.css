@@ -6,10 +6,12 @@
 }
 .header {
   width: 100vw;
+  height: 3em;
   /* temporary */
   position: fixed;
   top: 0;
   left: 0;
+  background-color: var(--main-bg);
 }
 .nav {
   max-width: 100%;

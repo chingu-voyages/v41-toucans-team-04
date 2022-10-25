@@ -1,0 +1,6 @@
+.toucan {
+  background-image: url("../assets/toucan.png");
+  background-size: cover;
+  height: 70vh;
+  width: 100vh;
+}
