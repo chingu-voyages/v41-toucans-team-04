@@ -1,0 +1,36 @@
+#menu {
+  padding-top: 5em;
+}
+#menu .menuList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.tabMenu {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.tabMenu > div {
+  width: 34%;
+  padding: 10px 0;
+  border: 1px solid var(--main-white);
+  text-align: center;
+}
+.tabMenu > div:not(:last-child) {
+  border-right: none;
+}
+.tabMenu > div.active {
+  border-bottom: none;
+}
+
+@media all and (min-width: 960px) {
+  #menu .menuList {
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
