@@ -5,8 +5,16 @@
   --main-grey: #83888f;
 }
 
+@font-face {
+  font-family: "Atkinson-Hyperlegible";
+  src: local("Atkinson-Hyperlegible"),
+    url("./fonts/Atkinson-Hyperlegible-Regular-102.ttf") format("truetype");
+  font-weight: 100;
+}
+
 .App {
-  background-color: var(--main-bg);
+  font-family: "Hyperlegible regular";
+  background-color: var(--main-black);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
