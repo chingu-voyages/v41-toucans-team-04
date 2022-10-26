@@ -6,6 +6,7 @@
     flex-direction: column;
     width: 50vw;
     margin: 0 auto;
+    min-width: 300px;
   }
 }
 .tabMenu {
@@ -17,6 +18,7 @@
     padding: 10px 0;
     border: 1px solid var(--main-white);
     text-align: center;
+    cursor: pointer;
     &:not(:last-child) {
       border-right: none;
     }
@@ -32,6 +34,7 @@
       justify-content: space-between;
       flex-direction: row;
       flex-wrap: wrap;
+      width: clamp(70vw, 50vw, 300px);
     }
   }
 }
