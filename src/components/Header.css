@@ -1,55 +1,55 @@
 :root {
-	--main-bg: #0e8784;
-	--main-black: #333d4b;
-	--main-white: #fefcf7;
-	--main-grey: #83888f;
+  --main-bg: #0e8784;
+  --main-black: #333d4b;
+  --main-white: #fefcf7;
+  --main-grey: #83888f;
 }
 .header {
-	position: relative;
-	width: 100%;
-	background-color: var(--main-bg);
-	font-family: 'Atkinson Hyperlegible', sans-serif;
+  position: relative;
+  width: 100%;
+  background-color: var(--main-bg);
+  font-family: "Atkinson Hyperlegible", sans-serif;
 }
 .nav {
-	max-width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0.5rem 1rem;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
 }
 .nav-logo {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 .nav-logo img {
-	width: 1.75rem;
-	height: 1.75rem;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 .nav-logo h2 {
-	color: var(--main-white);
-	font-size: 2.5rem;
-	font-weight: 700;
-	font-family: 'EB Garamond', serif;
+  color: var(--main-white);
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: "EB Garamond", serif;
 }
 .nav-menu {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nav-link {
-	color: var(--main-white);
-	list-style: none;
-	font-size: 0.75rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	padding: 0.75rem 1rem;
-	cursor: pointer;
+  color: var(--main-white);
+  list-style: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
 }
 .nav-link:hover {
-	color: orange;
+  color: orange;
 }
 /* @media (max-width: 768px) {
 } */

@@ -1,10 +1,10 @@
 #menu {
-  padding-top: 5em;
+  padding-top: 3em;
   .menuList {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 50vw;
+    width: 70vw;
     margin: 0 auto;
     min-width: 300px;
   }
@@ -12,12 +12,15 @@
 .tabMenu {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  width: 70vw;
   > div {
     width: 34%;
     padding: 10px 0;
     border: 1px solid var(--main-white);
     text-align: center;
+    font-family: "EB Garamond";
+    font-weight: 700;
     cursor: pointer;
     &:not(:last-child) {
       border-right: none;
@@ -34,6 +37,9 @@
       justify-content: space-between;
       flex-direction: row;
       flex-wrap: wrap;
+      width: clamp(70vw, 50vw, 300px);
+    }
+    .tabMenu {
       width: clamp(70vw, 50vw, 300px);
     }
   }
