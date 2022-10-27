@@ -23,11 +23,11 @@
 	justify-content: center;
 	gap: 1rem;
 }
-.nav-logo img {
+.nav-img {
 	width: 1.75rem;
 	height: 1.75rem;
 }
-.nav-logo h2 {
+.nav-title {
 	color: var(--main-white);
 	font-size: 2.5rem;
 	font-weight: 700;
@@ -51,5 +51,26 @@
 .nav-link:hover {
 	color: orange;
 }
-/* @media (max-width: 768px) {
-} */
+.hamburger {
+	display: none;
+}
+@media (max-width: 768px) {
+	.nav-menu {
+		display: none;
+	}
+	.hamburger {
+		position: absolute;
+		right: 10%;
+		display: block;
+	}
+	.nav {
+		padding: 1.15rem 1rem;
+	}
+	.nav-img {
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+	.nav-title {
+		font-size: 1.5rem;
+	}
+}
