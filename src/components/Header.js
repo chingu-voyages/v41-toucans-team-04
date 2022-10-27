@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
 import toucan from '../assets/toucan-logo.png';
+
 export default function Header() {
 	const [isOpen, setOpen] = useState(false);
 	return (
@@ -13,12 +14,16 @@ export default function Header() {
 					<h2 className="nav-title">toucan coffee</h2>
 				</div>
 				<ul className="nav-menu">
-					<Link to="/menu">
-						<li className="nav-link">Menu</li>
+					<Link to="/">
+						<li className="nav-link">Home</li>
 					</Link>
 					<Link to="/about">
 						<li className="nav-link">About Us</li>
 					</Link>
+					<Link to="/menu">
+						<li className="nav-link">Menu</li>
+					</Link>
+
 					<Link to="/plan">
 						<li className="nav-link">Create your Plan</li>
 					</Link>

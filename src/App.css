@@ -15,7 +15,7 @@
 
 .App {
 	font-family: 'Atkinson Hyperlegible', sans-serif;
-	background-color: var(--main-black);
+	/* background-color: var(--main-black); */
 	min-height: 100vh;
 	min-width: 100vw;
 	display: flex;
@@ -24,11 +24,4 @@
 	/* justify-content: center; */
 	font-size: calc(10px + 2vmin);
 	color: var(--main-white);
-}
-
-@media (min-width: 1280px) {
-	.App {
-		max-width: 1280px;
-		margin: 0 auto;
-	}
 }

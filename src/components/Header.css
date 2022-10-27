@@ -10,8 +10,6 @@
 	background-color: var(--main-bg);
 	font-family: 'Atkinson Hyperlegible', sans-serif;
 }
-.container {
-}
 .nav {
 	max-width: 100%;
 	display: flex;

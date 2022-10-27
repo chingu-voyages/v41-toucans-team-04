@@ -1,4 +1,5 @@
 import './Main.css';
+import video from '../assets/video-coffee.mp4';
 
 const Main = () => {
 	return (
@@ -14,6 +15,13 @@ const Main = () => {
 				</p>
 				<button className="main-btn">Create your Plan</button>
 			</div>
+			<video
+				src={video}
+				type="video/mp4"
+				autoPlay
+				loop
+				muted
+				className="main-video"></video>
 		</section>
 	);
 };
