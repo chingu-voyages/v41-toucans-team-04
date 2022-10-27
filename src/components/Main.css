@@ -6,19 +6,21 @@
 }
 .main {
 	position: relative;
-	min-height: 100%;
-	width: 60%;
+	max-height: 100%;
+	padding: 2rem 1rem;
+}
+.main-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	gap: 3rem;
-	padding: 2rem 1rem;
 }
 .main-title {
 	font-size: 4.5rem;
 	font-family: 'EB Garamond', serif;
 }
 .main-text {
+	max-width: 60%;
 	font-size: 1.15rem;
 	line-height: 1.5;
 }
@@ -38,5 +40,11 @@
 @media (max-width: 768px) {
 	.main {
 		align-items: center;
+	}
+}
+@media (min-width: 1280px) {
+	.main-wrapper {
+		max-width: 1280px;
+		margin: 0 auto;
 	}
 }

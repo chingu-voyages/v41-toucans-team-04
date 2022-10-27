@@ -10,6 +10,8 @@
 	background-color: var(--main-bg);
 	font-family: 'Atkinson Hyperlegible', sans-serif;
 }
+.container {
+}
 .nav {
 	max-width: 100%;
 	display: flex;
@@ -60,7 +62,7 @@
 	}
 	.hamburger {
 		position: absolute;
-		right: 10%;
+		right: 5%;
 		display: block;
 	}
 	.nav {
@@ -72,5 +74,11 @@
 	}
 	.nav-title {
 		font-size: 1.5rem;
+	}
+}
+@media (min-width: 1280px) {
+	.nav {
+		max-width: 1280px;
+		margin: 0 auto;
 	}
 }
