@@ -1,28 +1,26 @@
-import "./Header.css";
-import { Link } from "react-router-dom";
-import coffeeBean from "../assets/icon-coffee-bean.svg";
+import './Header.css';
+import { Link } from 'react-router-dom';
+import toucan from '../assets/toucan-logo.png';
 export default function Header() {
-  return (
-    <header id="header" className="header">
-      <nav id="gnb" className="nav">
-        <h1 className="logo">
-          <i className="fa-solid fa-crow logoImg"></i>
-          <img src={coffeeBean} className="logoImg" />
-          {`   `}
-          Toucan Coffee
-        </h1>
-        <ul className="menu">
-          <Link to="/about">
-            <li className="menu-link">About</li>
-          </Link>
-          <Link to="/menu">
-            <li className="menu-link">Menu</li>
-          </Link>
-          <Link to="/shopping">
-            <li className="menu-link">Shopping</li>
-          </Link>
-        </ul>
-      </nav>
-    </header>
-  );
+	return (
+		<header id="header" className="header">
+			<nav id="nav" className="nav">
+				<div className="nav-logo">
+					<img src={toucan} alt="toucan logo" />
+					<h2>toucan coffee</h2>
+				</div>
+				<ul className="nav-menu">
+					<Link to="/menu">
+						<li className="nav-link">Menu</li>
+					</Link>
+					<Link to="/about">
+						<li className="nav-link">About Us</li>
+					</Link>
+					<Link to="/plan">
+						<li className="nav-link">Create your Plan</li>
+					</Link>
+				</ul>
+			</nav>
+		</header>
+	);
 }
