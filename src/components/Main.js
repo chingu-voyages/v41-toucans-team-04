@@ -5,6 +5,7 @@ const Main = () => {
 	return (
 		<section className="main">
 			<div className="main-wrapper">
+				<div className="overlay"></div>
 				<h1 className="main-title">
 					Great Coffee <br /> made simple.
 				</h1>
