@@ -21,6 +21,7 @@ function App() {
 				<Header />
 				<Routes>
 					<Route path="/" element={<Main />} />
+					<Route path="/" element={<Showcase />} />
 					<Route path="/menu" element={<Menu />} />
 
 					{/* <Route path="/about" element={<About />} />

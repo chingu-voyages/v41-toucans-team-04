@@ -7,8 +7,7 @@
 .main {
 	position: relative;
 	width: 100%;
-	min-height: 90vh;
-	overflow: hidden;
+	min-height: 95vh;
 }
 .main-wrapper {
 	display: flex;

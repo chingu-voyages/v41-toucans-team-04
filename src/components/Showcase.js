@@ -2,9 +2,9 @@ import './Showcase.css';
 
 const Showcase = () => {
 	return (
-		<div>
+		<section className="showcase">
 			<h3>Our Collection</h3>
-		</div>
+		</section>
 	);
 };
 

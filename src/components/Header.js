@@ -4,7 +4,9 @@ import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
 import toucan from '../assets/toucan-logo.png';
 export default function Header() {
-	const [open, setOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
+	const closeMenu = () => setIsOpen(false);
+
 	return (
 		<header id="header" className="header">
 			<nav id="nav" className="nav">
@@ -26,25 +28,33 @@ export default function Header() {
 						<li className="nav-link">Create your Plan</li>
 					</Link>
 				</ul>
-				{open && (
+				{isOpen && (
 					<ul className="nav-menu-mobile">
 						<Link to="/">
-							<li className="nav-link-mobile">Home</li>
+							<li className="nav-link-mobile" onClick={closeMenu}>
+								Home
+							</li>
 						</Link>
 						<Link to="/about">
-							<li className="nav-link-mobile">About Us</li>
+							<li className="nav-link-mobile" onClick={closeMenu}>
+								About Us
+							</li>
 						</Link>
 						<Link to="/menu">
-							<li className="nav-link-mobile">Menu</li>
+							<li className="nav-link-mobile" onClick={closeMenu}>
+								Menu
+							</li>
 						</Link>
 						<Link to="/plan">
-							<li className="nav-link-mobile">Create your Plan</li>
+							<li className="nav-link-mobile" onClick={closeMenu}>
+								Create your Plan
+							</li>
 						</Link>
 					</ul>
 				)}
-				<a className="hamburger" onClick={() => setOpen(!open)}>
-					<Hamburger size={24} />
-				</a>
+				<div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+					<Hamburger size={24} toggled={isOpen} toggle={setIsOpen} />
+				</div>
 			</nav>
 		</header>
 	);
