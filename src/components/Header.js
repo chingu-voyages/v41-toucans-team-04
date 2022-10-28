@@ -9,7 +9,7 @@ export default function Header() {
 
 	return (
 		<header id="header" className="header">
-			<nav id="nav" className="nav">
+			<nav id="nav" className="nav container">
 				<div className="nav-logo">
 					<img src={toucan} className="nav-img" alt="toucan logo" />
 					<h2 className="nav-title">toucan coffee</h2>
