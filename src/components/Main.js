@@ -1,5 +1,6 @@
 import './Main.css';
 import Showcase from './Showcase';
+import Features from './Features';
 import video from '../assets/video-coffee.mp4';
 import poster from '../assets/image-hero-coffeepress.jpg';
 
@@ -7,9 +8,10 @@ const Main = () => {
 	return (
 		<>
 			<section className="main">
-				<div className="main-wrapper">
+				<div className="main-container container">
 					<h1 className="main-title">
-						Great coffee <br /> made simple.
+						Great coffee
+						<br /> made simple.
 					</h1>
 					<p className="main-text">
 						Start your mornings with the world’s best coffees. Try our
@@ -30,6 +32,7 @@ const Main = () => {
 				</div>
 			</section>
 			<Showcase />
+			<Features />
 		</>
 	);
 };

@@ -1,14 +1,7 @@
-:root {
-	--main-bg: #0e8784;
-	--main-black: #333d4b;
-	--main-white: #fefcf7;
-	--main-grey: #83888f;
-}
 .header {
 	position: relative;
 	width: 100%;
 	background-color: var(--main-white);
-	font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 .nav {
 	max-width: 100%;
@@ -105,11 +98,5 @@
 	}
 	.nav-title {
 		font-size: 1.5rem;
-	}
-}
-@media (min-width: 1280px) {
-	.nav {
-		max-width: 1280px;
-		margin: 0 auto;
 	}
 }

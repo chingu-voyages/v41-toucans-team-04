@@ -1,36 +1,29 @@
-:root {
-	--main-bg: #0e8784;
-	--main-black: #333d4b;
-	--main-white: #fefcf7;
-	--main-grey: #83888f;
-}
 .showcase {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	margin: 1rem 0;
-	margin-bottom: 5rem;
 }
-.collection-wrapper {
+.showcase-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	color: black;
 	padding: 2rem 1rem;
 }
-.collection-list {
+.showcase-list {
 	display: flex;
 	flex-direction: column;
 	gap: 2.5rem;
 	color: var(--main-black);
 }
-.collection-title {
+.showcase-title {
 	font-size: clamp(3.25rem, 12vw, 10rem);
 	font-family: 'EB Garamond', serif;
 	background: linear-gradient(
-		to bottom,
+		to top,
 		var(--main-white) 0%,
-		var(--main-grey) 90%
+		var(--main-grey) 100%
 	);
 	background-clip: text;
 	-webkit-background-clip: text;
@@ -39,9 +32,8 @@
 	-webkit-text-fill-color: transparent;
 	display: inline-block;
 	max-width: 100%;
-	margin-bottom: 2rem;
 }
-.collection-item {
+.showcase-item {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -49,24 +41,28 @@
 	flex: 1;
 	gap: 0.5rem;
 }
-.collection-item img {
+.showcase-item img {
 	max-width: 320px;
 	height: auto;
 }
-.collection-text {
+.showcase-item h4 {
+	font-family: 'EB Garamond', serif;
+}
+.showcase-item p {
 	font-size: 1rem;
 	text-align: center;
 }
-
-@media (min-width: 1280px) {
-	.collection-wrapper {
-		max-width: 1280px;
-		margin: 0 auto;
-	}
-	.collection-list {
+@media (min-width: 640px) {
+	.showcase-list {
 		flex-direction: row;
-		justify-content: center;
+		flex-wrap: wrap;
 		flex: 1;
+	}
+}
+@media (min-width: 1280px) {
+	.showcase-list {
+		justify-content: center;
+		flex-wrap: nowrap;
 		gap: 1rem;
 	}
 }

@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=EB+Garamond:wght@500;600;700&display=swap');
+:root {
+	--main-bg: #0e8784;
+	--main-black: #333d4b;
+	--main-white: #fefcf7;
+	--main-grey: #83888f;
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -9,4 +15,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
+}
+/* center content for large monitors */
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
 }
