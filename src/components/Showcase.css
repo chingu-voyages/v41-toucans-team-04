@@ -1,23 +1,43 @@
+:root {
+	--main-bg: #0e8784;
+	--main-black: #333d4b;
+	--main-white: #fefcf7;
+	--main-grey: #83888f;
+}
 .showcase {
 	position: relative;
 	width: 100%;
 	height: 100%;
+	margin: 1rem 0;
+	margin-bottom: 5rem;
 }
 .collection-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-family: 'EB Garamond', serif;
 	color: black;
-	padding: 2rem 1.5rem;
+	padding: 2rem 1rem;
 }
 .collection-list {
 	display: flex;
 	flex-direction: column;
-	gap: 2rem;
+	gap: 2.5rem;
+	color: var(--main-black);
 }
 .collection-title {
-	font-size: clamp(3rem, 12vw, 12rem);
+	font-size: clamp(3.25rem, 12vw, 10rem);
+	font-family: 'EB Garamond', serif;
+	background: linear-gradient(
+		to bottom,
+		var(--main-white) 0%,
+		var(--main-grey) 90%
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
+	display: inline-block;
 	max-width: 100%;
 	margin-bottom: 2rem;
 }
@@ -27,11 +47,15 @@
 	justify-content: center;
 	align-items: center;
 	flex: 1;
-	gap: 2rem;
+	gap: 0.5rem;
 }
 .collection-item img {
-	max-width: 100%;
+	max-width: 320px;
 	height: auto;
+}
+.collection-text {
+	font-size: 1rem;
+	text-align: center;
 }
 
 @media (min-width: 1280px) {
