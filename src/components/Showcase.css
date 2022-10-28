@@ -1,7 +1,41 @@
 .showcase {
 	position: relative;
+	width: 100%;
+	height: 100%;
 }
-
-h3 {
+.collection-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'EB Garamond', serif;
 	color: black;
+	padding: 2rem 1.5rem;
+	gap: 3rem;
+}
+.collection-list {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+.collection-title {
+	font-size: clamp(3rem, 12vw, 12rem);
+	max-width: 100%;
+}
+.collection-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+@media (min-width: 768px) {
+	.collection-list {
+		flex-direction: row;
+	}
+}
+@media (min-width: 1280px) {
+	.collection-wrapper {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
 }

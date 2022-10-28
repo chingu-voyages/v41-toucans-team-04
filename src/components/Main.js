@@ -8,7 +8,6 @@ const Main = () => {
 		<>
 			<section className="main">
 				<div className="main-wrapper">
-					{/* <div className="overlay"></div> */}
 					<h1 className="main-title">
 						Great Coffee <br /> made simple.
 					</h1>
@@ -28,6 +27,7 @@ const Main = () => {
 					muted
 					crossOrigin="true"
 					className="main-video"></video>
+				<div className="overlay"></div>
 			</section>
 			<Showcase />
 		</>
