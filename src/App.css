@@ -15,7 +15,7 @@
 
 .App {
 	font-family: 'Atkinson Hyperlegible', sans-serif;
-	background-color: var(--main-black);
+	/* background-color: var(--main-black); */
 	min-height: 100vh;
 	min-width: 100vw;
 	display: flex;

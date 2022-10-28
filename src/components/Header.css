@@ -15,7 +15,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 1.5rem;
 }
 .nav-logo {
 	display: flex;
@@ -23,15 +23,17 @@
 	justify-content: center;
 	gap: 1rem;
 }
-.nav-logo img {
+.nav-img {
 	width: 1.75rem;
 	height: 1.75rem;
+	z-index: 10;
 }
-.nav-logo h2 {
+.nav-title {
 	color: var(--main-white);
 	font-size: 2.5rem;
 	font-weight: 700;
 	font-family: 'EB Garamond', serif;
+	z-index: 10;
 }
 .nav-menu {
 	display: flex;
@@ -51,5 +53,59 @@
 .nav-link:hover {
 	color: orange;
 }
-/* @media (max-width: 768px) {
-} */
+.hamburger {
+	display: none;
+	z-index: 10;
+}
+.nav-menu-mobile {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	padding-top: 5rem;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 1rem;
+	background-color: var(--main-black);
+	opacity: 0.95;
+	z-index: 10;
+}
+.nav-link-mobile {
+	color: var(--main-white);
+	font-size: 2rem;
+	font-weight: 700;
+	border-bottom: transparent 4px solid;
+}
+.nav-link-mobile:hover {
+	border-bottom: orange 4px solid;
+	color: orange;
+}
+@media (max-width: 768px) {
+	.nav-menu {
+		display: none;
+	}
+	.hamburger {
+		position: absolute;
+		right: 5%;
+		display: block;
+	}
+	.nav {
+		padding: 1.15rem 1rem;
+	}
+	.nav-img {
+		height: 1.5rem;
+		width: 1.5rem;
+	}
+	.nav-title {
+		font-size: 1.5rem;
+	}
+}
+@media (min-width: 1280px) {
+	.nav {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+}
