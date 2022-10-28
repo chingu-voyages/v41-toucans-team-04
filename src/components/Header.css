@@ -7,7 +7,7 @@
 .header {
 	position: relative;
 	width: 100%;
-	background-color: var(--main-bg);
+	background-color: var(--main-white);
 	font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 .nav {
@@ -15,21 +15,24 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.5rem 1.5rem;
+	padding: 1rem;
 }
 .nav-logo {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 1rem;
+	gap: 0.5rem;
 }
 .nav-img {
-	width: 1.75rem;
-	height: 1.75rem;
+	width: 2rem;
+	height: 2rem;
 	z-index: 10;
+	padding: 0.1rem;
+	border-radius: 50%;
+	background-color: var(--main-bg);
 }
 .nav-title {
-	color: var(--main-white);
+	color: var(--main-black);
 	font-size: 2.5rem;
 	font-weight: 700;
 	font-family: 'EB Garamond', serif;
@@ -41,7 +44,7 @@
 	align-items: center;
 }
 .nav-link {
-	color: var(--main-white);
+	color: var(--main-grey);
 	list-style: none;
 	font-size: 0.75rem;
 	font-weight: 700;
@@ -51,10 +54,11 @@
 	cursor: pointer;
 }
 .nav-link:hover {
-	color: orange;
+	color: var(--main-bg);
 }
 .hamburger {
 	display: none;
+	color: var(--main-black);
 	z-index: 10;
 }
 .nav-menu-mobile {
@@ -69,7 +73,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	gap: 1rem;
-	background-color: var(--main-black);
+	background-color: var(--main-bg);
 	opacity: 0.95;
 	z-index: 10;
 }

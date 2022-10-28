@@ -9,7 +9,7 @@ const Main = () => {
 			<section className="main">
 				<div className="main-wrapper">
 					<h1 className="main-title">
-						Great Coffee <br /> made simple.
+						Great coffee <br /> made simple.
 					</h1>
 					<p className="main-text">
 						Start your mornings with the world’s best coffees. Try our
@@ -17,17 +17,17 @@ const Main = () => {
 						delivered directly to your door, at your schedule.
 					</p>
 					<button className="main-btn">Create your Plan</button>
+					<video
+						src={video}
+						type="video/mp4"
+						poster={poster}
+						autoPlay
+						loop
+						muted
+						crossOrigin="true"
+						className="main-video"></video>
+					<div className="overlay"></div>
 				</div>
-				<video
-					src={video}
-					type="video/mp4"
-					poster={poster}
-					autoPlay
-					loop
-					muted
-					crossOrigin="true"
-					className="main-video"></video>
-				<div className="overlay"></div>
 			</section>
 			<Showcase />
 		</>
