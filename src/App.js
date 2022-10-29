@@ -2,6 +2,8 @@ import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import Menu from './components/Menu';
+import About from './components/About';
+import Plan from './components/Plan';
 import {
 	BrowserRouter as Router,
 	Navigate,
@@ -21,9 +23,9 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Main />} />
 					<Route path="/menu" element={<Menu />} />
-
-					{/* <Route path="/about" element={<About />} />
-          <Route path="/shopping" element={<Shop />} /> */}
+					<Route path="/about" element={<About />} />
+					<Route path="/plan" element={<Plan />} />
+					{/*<Route path="/shopping" element={<Shop />} /> */}
 					{/* Components not made yet */}
 
 					<Route path="*" element={<Navigate to="/" />} />

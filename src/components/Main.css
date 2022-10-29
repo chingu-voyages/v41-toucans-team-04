@@ -61,6 +61,7 @@ p {
 	justify-content: center;
 	gap: 3.5rem;
 	padding: 2rem 1rem;
+	color: var(--main-white);
 }
 .main-title {
 	font-size: 3.25rem;
@@ -327,10 +328,7 @@ p {
 	color: var(--main-orange);
 }
 .works-item h6 {
-	font-size: 2.5rem;
-}
-.works-item p {
-	font-size: 1.1rem;
+	font-size: 2rem;
 }
 .works .btn {
 	margin: 2rem 0;
