@@ -31,7 +31,8 @@ const Main = () => {
 						autoPlay
 						loop
 						muted
-						crossOrigin="true"
+						webkit-playsinline
+						playsinline
 						className="main-video"></video>
 					<div className="overlay"></div>
 				</div>
