@@ -14,6 +14,7 @@ const Plan = () => {
 					</p>
 					<video
 						src={video}
+						type="video/mp4"
 						poster={poster}
 						autoPlay
 						loop
