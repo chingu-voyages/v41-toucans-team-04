@@ -1,6 +1,6 @@
 import './About.css';
 import video from '../assets/video-filter-cup.mp4';
-import poster from '../assets/image-hero-whitecup.jpg';
+import poster from '../assets/image-hero-blackcup.jpg';
 const About = () => {
 	return (
 		<>
