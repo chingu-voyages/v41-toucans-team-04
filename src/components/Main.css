@@ -9,6 +9,15 @@ h6,
 	font-family: 'EB Garamond', serif;
 	font-weight: 800;
 }
+p {
+	text-align: center;
+	font-size: 1rem;
+}
+@media (min-width: 640px) {
+	p {
+		text-align: left;
+	}
+}
 .btn {
 	color: var(--main-white);
 	background-color: var(--main-bg);
@@ -23,6 +32,13 @@ h6,
 .btn:hover {
 	opacity: 0.75;
 	color: var(--main-orange);
+}
+/* container */
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1280px;
+		margin: 0 auto;
+	}
 }
 /* sections */
 .showcase,
@@ -56,7 +72,6 @@ h6,
 	font-size: 1rem;
 	line-height: 1.4;
 	z-index: 2;
-	text-align: center;
 }
 .main-video {
 	position: absolute;
@@ -88,18 +103,12 @@ h6,
 	.main-text {
 		max-width: 60%;
 		font-size: 1.1rem;
-		text-align: left;
 	}
 	.main-btn {
 		font-size: 1.5rem;
 	}
 }
 @media (min-width: 1280px) {
-	/* container */
-	.container {
-		max-width: 1280px;
-		margin: 0 auto;
-	}
 	.main-title {
 		font-size: 5rem;
 		margin-top: 3rem;
@@ -163,10 +172,6 @@ h6,
 	max-width: 320px;
 	height: auto;
 }
-.showcase-item p {
-	font-size: 1rem;
-	text-align: center;
-}
 @media (min-width: 640px) {
 	.showcase-item {
 		flex-direction: row;
@@ -177,9 +182,7 @@ h6,
 		align-items: flex-start;
 		gap: 2.5rem;
 		margin-bottom: 2.5rem;
-	}
-	.showcase-item p {
-		text-align: left;
+		width: 50%;
 	}
 }
 @media (min-width: 1280px) {
@@ -212,7 +215,6 @@ h6,
 	font-size: clamp(2.75rem, 8vw, 4rem);
 }
 .features-text {
-	font-size: 1rem;
 	text-align: center;
 	padding: 1rem;
 }
@@ -253,9 +255,6 @@ h6,
 .features-card-text h4 {
 	font-size: 1.75rem;
 }
-.features-card-text p {
-	font-size: 0.9rem;
-}
 @media (min-width: 480px) {
 	.features-text {
 		width: 80%;
@@ -268,7 +267,7 @@ h6,
 	.features-card img {
 		margin: 1rem 1.5rem;
 	}
-	.features-card-text {
+	.features-card-text > * {
 		align-items: flex-start;
 		text-align: left;
 	}
@@ -287,7 +286,7 @@ h6,
 	.features-card img {
 		margin: 1rem;
 	}
-	.features-card-text {
+	.features-card-text > * {
 		align-items: center;
 		text-align: center;
 	}
@@ -321,7 +320,6 @@ h6,
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
 	gap: 1rem;
 }
 .works-item .works-item-no {
@@ -338,16 +336,16 @@ h6,
 	margin: 2rem 0;
 }
 @media (min-width: 768px) {
+	.works-container {
+		align-items: flex-start;
+		padding-left: 3rem;
+	}
 	.works-items {
 		flex-direction: row;
-		align-items: center;
+		align-items: flex-start;
 	}
 	.works-item {
 		align-items: flex-start;
 		text-align: left;
-		justify-content: stretch;
-	}
-	.works .btn {
-		align-self: flex-start;
 	}
 }
