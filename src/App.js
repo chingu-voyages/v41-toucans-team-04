@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
-import Showcase from './components/Showcase';
 import Menu from './components/Menu';
 import {
 	BrowserRouter as Router,
@@ -21,7 +20,6 @@ function App() {
 				<Header />
 				<Routes>
 					<Route path="/" element={<Main />} />
-					<Route path="/" element={<Showcase />} />
 					<Route path="/menu" element={<Menu />} />
 
 					{/* <Route path="/about" element={<About />} />
