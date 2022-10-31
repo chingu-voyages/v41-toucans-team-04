@@ -1,27 +1,26 @@
-:root {
-	--main-bg: #0e8784;
-	--main-black: #333d4b;
-	--main-white: #fefcf7;
-	--main-grey: #83888f;
-}
-/* added the fonts in index.css so they can load on every component */
-/* @font-face {
-	font-family: 'Atkinson-Hyperlegible';
-	src: local('Atkinson-Hyperlegible'),
-		url('./fonts/Atkinson-Hyperlegible-Regular-102.ttf')
-			format('truetype');
-	font-weight: 100;
-} */
-
 .App {
-	font-family: 'Atkinson Hyperlegible', sans-serif;
-	/* background-color: var(--main-black); */
-	min-height: 100vh;
-	min-width: 100vw;
-	display: flex;
-	flex-direction: column;
-	/* align-items: center; */
-	/* justify-content: center; */
-	font-size: calc(10px + 2vmin);
-	color: var(--main-white);
+  background-color: wheat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #61dafb;
+}
+
+.Merch {
+  background-color: #fff5ea;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #61dafb;
+}
+
+.App-h1,
+.App-p {
+  color: #4c243b;
 }

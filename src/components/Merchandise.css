@@ -1,0 +1,40 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+.merch {
+  display: flex;
+  width: 100%;
+  color: #4c243b;
+}
+.merch h1 {
+  font-size: 1rem;
+}
+.merch p {
+  font-size: 0.8rem;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 30%;
+}
+img {
+  width: 250px;
+  height: 300px;
+  align-items: center;
+}
+.card .name {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.card .description {
+  font-size: 0.7rem;
+  overflow-x: hidden;
+}
+.card .line {
+  height: 2px;
+  width: 100%;
+  color: orangered;
+}

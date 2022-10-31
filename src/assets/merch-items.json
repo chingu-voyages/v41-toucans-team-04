@@ -1,0 +1,44 @@
+[
+  {
+    "key": 1,
+    "name": "Columbia La Cabana Blend",
+    "description":
+      "Rich and smokey with hints of panela, lime and milk chocolate",
+    "img": "columbia.png"
+  },
+  {
+    "key": 2,
+    "name": "Mug",
+    "description":
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+    "img":"mug.png"
+  },
+  {
+    "key": 3,
+    "name": "Tumbler",
+    "description":
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+    "img":"tumbler.png"
+  },
+  {
+    "key": 4,
+    "name": "Gift Box 1",
+    "description":
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+    "img":"gift_box1.png"
+  },
+  {
+    "key": 5,
+    "name": "Gift Box 2",
+    "description":
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+    "img":"gift_box2.png"
+  },
+  {
+    "key": 6,
+    "name": "Drip Coffee Jug",
+    "description":
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+    "img":"drip_coffee.png"
+  }
+]
