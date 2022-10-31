@@ -22,7 +22,7 @@ const Plan = () => {
 						webkit-playsinline
 						playsinline
 						className="hero-video"></video>
-					<div className="overlay"></div>
+					<div className="hero-overlay"></div>
 				</div>
 			</section>
 			<section className="plan">
