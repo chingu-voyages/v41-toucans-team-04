@@ -54,6 +54,7 @@
 @media (min-width: 640px) {
 	.about .main-title {
 		font-size: 4rem;
+		margin: 4rem 0;
 	}
 	.mission-container {
 		flex-direction: row;
