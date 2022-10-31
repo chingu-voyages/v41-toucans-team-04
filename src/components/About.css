@@ -1,8 +1,11 @@
-.about .main-title {
+.about-hero .hero-title {
 	font-size: 2.5rem;
 	margin-bottom: 3rem;
 }
-.about .main-container {
+.about-hero .hero-container {
+	margin-bottom: 2rem;
+}
+.quality {
 	margin-bottom: 2rem;
 }
 /* mission */
@@ -44,7 +47,7 @@
 .quality-bg {
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 90%;
 	left: 0;
 	top: 10rem;
 	background-color: var(--main-black);
@@ -52,7 +55,7 @@
 	z-index: -1;
 }
 @media (min-width: 640px) {
-	.about .main-title {
+	.about-hero .hero-title {
 		font-size: 4rem;
 		margin: 4rem 0;
 	}
@@ -88,7 +91,7 @@
 	.quality-text {
 		margin-top: 5rem;
 	}
-	.main-title {
+	.about-hero .hero-title {
 		font-size: 5rem;
 	}
 }

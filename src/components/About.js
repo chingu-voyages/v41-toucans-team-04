@@ -6,9 +6,9 @@ import coffee from '../assets/image-plant.jpg';
 const About = () => {
 	return (
 		<>
-			<section className="about">
-				<div className="main-container container">
-					<h1 className="main-title">
+			<section className="about-hero">
+				<div className="hero-container container">
+					<h1 className="hero-title">
 						We're redefining <br />
 						what it means to <br />
 						brew great coffee.
@@ -22,7 +22,7 @@ const About = () => {
 						muted
 						webkit-playsinline
 						playsinline
-						className="main-video"></video>
+						className="hero-video"></video>
 					<div className="overlay"></div>
 				</div>
 			</section>
