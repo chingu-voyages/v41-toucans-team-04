@@ -12,7 +12,7 @@ export default function Header() {
 			<nav id="nav" className="nav container">
 				<div className="nav-logo">
 					<img src={toucan} className="nav-img" alt="toucan logo" />
-					<h2 className="nav-title">toucan coffee</h2>
+					<h2 className="nav-title">Toucan Coffee</h2>
 				</div>
 				<ul className="nav-menu">
 					<Link to="/">
@@ -25,7 +25,7 @@ export default function Header() {
 						<li className="nav-link">Menu</li>
 					</Link>
 					<Link to="/plan">
-						<li className="nav-link">Create your Plan</li>
+						<li className="nav-link">Plans</li>
 					</Link>
 				</ul>
 				{isOpen && (
