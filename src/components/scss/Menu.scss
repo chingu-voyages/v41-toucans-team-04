@@ -12,18 +12,21 @@
 .tabMenu {
   display: flex;
   justify-content: space-around;
-  margin: 0 auto 30px;
+  margin: 0 auto 3em;
   width: 70vw;
   > div {
     width: 34%;
     padding: 10px 0;
-    border: 1px solid var(--main-white);
+    border: 3px solid var(--main-white);
     text-align: center;
     font-family: "EB Garamond";
     font-weight: 700;
+    font-size: 30px;
     cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     &:not(:last-child) {
-      border-right: none;
+      // border-right: none;
     }
     &.active {
       border-bottom: none;
