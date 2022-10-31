@@ -1,4 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Inter+Tight:ital,wght@0,700;1,400;1,500&display=swap');
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('./fonts/Atkinson-Hyperlegible-Regular-102.ttf')
+		format('truetype');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('./fonts/Atkinson-Hyperlegible-Bold-102.ttf')
+		format('truetype');
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Inter Tight';
+	src: url('./fonts/InterTight-Bold.ttf') format('truetype');
+	font-weight: 700;
+}
 :root {
 	--main-bg: #0e8784;
 	--main-black: #333d4b;
@@ -16,4 +32,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
+	min-height: 100vh;
+	min-width: 100vw;
 }

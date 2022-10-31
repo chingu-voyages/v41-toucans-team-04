@@ -42,12 +42,14 @@ export default function Menu() {
 				</div>
 			</section>
 
-			<section className="cards-container container">
-				<ul>
-					{card.map((item, idx) => {
-						return <Card data={item} key={idx} />;
-					})}
-				</ul>
+			<section className="cards">
+				<div className="cards-container container">
+					<ul>
+						{card.map((item, idx) => {
+							return <Card data={item} key={idx} />;
+						})}
+					</ul>
+				</div>
 			</section>
 		</>
 	);
