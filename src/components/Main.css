@@ -44,16 +44,16 @@ p {
 .showcase,
 .features,
 .works,
-.main {
+.hero {
 	position: relative;
 	width: 100%;
 	height: 100%;
 	margin: 1rem 0;
 }
-.main {
+.hero {
 	margin: 0;
 }
-.main-container {
+.hero-container {
 	position: relative;
 	height: 36rem;
 	display: flex;
@@ -64,18 +64,18 @@ p {
 	padding: 2rem 1rem;
 	color: var(--main-white);
 }
-.main-title {
+.hero-title {
 	font-size: 3.25rem;
 	line-height: 1;
 	margin-top: 2rem;
 	z-index: 2;
 }
-.main-text {
+.hero-text {
 	font-size: 1rem;
 	line-height: 1.4;
 	z-index: 2;
 }
-.main-video {
+.hero-video {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -93,36 +93,36 @@ p {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 @media (min-width: 640px) {
-	.main-container {
+	.hero-container {
 		justify-content: center;
 		align-items: flex-start;
 		padding-left: 3.5rem;
 	}
-	.main-title {
+	.hero-title {
 		font-size: 4rem;
 		margin-top: 2rem;
 	}
-	.main-text {
+	.hero-text {
 		max-width: 60%;
 		font-size: 1.1rem;
 	}
-	.main-btn {
+	.hero-btn {
 		font-size: 1.5rem;
 	}
 }
 @media (min-width: 1280px) {
-	.main-title {
+	.hero-title {
 		font-size: 5rem;
 		margin-top: 3rem;
 	}
-	.main-text {
+	.hero-text {
 		font-size: 1.25rem;
 	}
-	.main-btn {
+	.hero-btn {
 		font-size: 1.75rem;
 		margin-bottom: 3rem;
 	}
-	.main-video,
+	.hero-video,
 	.overlay {
 		border-radius: 8px;
 	}
@@ -325,6 +325,7 @@ p {
 	align-items: center;
 	gap: 2rem;
 	color: var(--main-black);
+	margin-bottom: 2rem;
 	padding: 1rem;
 }
 .works-title {

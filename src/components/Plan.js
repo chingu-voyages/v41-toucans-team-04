@@ -4,10 +4,10 @@ import poster from '../assets/image-hero-whitecup.jpg';
 const Plan = () => {
 	return (
 		<>
-			<section className="plan">
-				<div className="main-container container">
-					<h1 className="main-title">Create a plan</h1>
-					<p className="main-text">
+			<section className="plan-hero">
+				<div className="hero-container container">
+					<h1 className="hero-title">Create a plan</h1>
+					<p className="hero-text">
 						Build a subscription plan that best fits your needs. We
 						offer an assortment of the best artisan coffees from
 						around the globe delivered fresh to your door.
@@ -21,8 +21,13 @@ const Plan = () => {
 						muted
 						webkit-playsinline
 						playsinline
-						className="main-video"></video>
+						className="hero-video"></video>
 					<div className="overlay"></div>
+				</div>
+			</section>
+			<section className="plan">
+				<div className="plan-container container">
+					<h2 className="hero-title">Create your Plan</h2>
 				</div>
 			</section>
 		</>

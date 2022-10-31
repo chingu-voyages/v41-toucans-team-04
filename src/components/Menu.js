@@ -18,13 +18,13 @@ export default function Menu() {
 
 	return (
 		<>
-			<section className="menu">
-				<div className="main-container container">
-					<h1 className="main-title">
+			<section className="menu-hero">
+				<div className="hero-container container">
+					<h1 className="hero-title">
 						The Gift of <br />
 						Better Coffee <br />
 					</h1>
-					<p className="main-text">
+					<p className="hero-text">
 						Toucan Coffee began its journey of exotic discovery in
 						1999, highlighting stories of coffee from around the
 						world.
@@ -38,7 +38,7 @@ export default function Menu() {
 						muted
 						webkit-playsinline
 						playsinline
-						className="main-video"></video>
+						className="hero-video"></video>
 					<div className="overlay"></div>
 				</div>
 			</section>

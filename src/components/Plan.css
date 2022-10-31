@@ -1,6 +1,12 @@
-.plan .main-title {
+.plan-hero {
+	margin-bottom: 2rem;
+}
+.plan-hero .hero-title {
 	margin-top: 4rem;
 }
-.plan .main-text {
+.plan-hero .hero-text {
 	margin-bottom: 4rem;
+}
+.plan {
+	margin-bottom: 6rem;
 }
