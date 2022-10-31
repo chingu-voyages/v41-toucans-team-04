@@ -1,58 +1,61 @@
 {
-  "coffees": [
-    {
-      "name": "Piccollo",
-      "description": "Stronger than a flat white, 1:2 espresso: textured milk",
-      "ingredients": "espresso, milk",
-      "price": 3
-    },
-    {
-      "name": "Espresso Macchiato",
-      "description": "espresso 'marked' with a little textured milk",
-      "ingredients": "espresso, milk",
-      "price": 3.2
-    },
-    {
-      "name": "Mocha",
-      "description": "espresso and house hot chocolate with textured steamed milk",
-      "ingredients": "espresso, hot chocolate, milk ",
-      "price": 3
-    },
+  "coffee": [
     {
       "name": "Long Black",
       "description": "Our long blacks keep their strength through the sizes - a double espresso for a small, three for a medium and four for a large",
-      "ingredients": "espresso, water ",
-      "price": 3
+      "image": "../images/coffee/longBlack.jpeg"
     },
     {
       "name": "Latte",
       "description": "A double espresso with steamed textured milk",
-      "ingredients": "espresso, milk",
-      "price": 4
+      "image": "../images/coffee/latte.jpeg"
     },
     {
       "name": "Flat White",
       "description": "We're unique in serving flat whites through the sizes. We keep the ratio of coffee:milk the same - a double espresso in small, three for a medium, four for a large.",
-      "ingredients": "espresso, milk",
-      "price": 3.5
+      "image": "../images/coffee/flatWhite.jpeg"
     },
     {
       "name": "Filter",
       "description": "Our seasonally sourced, single origin filter coffee, batch brewed freshly.",
-      "ingredients": "filter coffee",
-      "price": 2.8
+      "image": "../images/coffee/filter.jpeg"
     },
     {
       "name": "Cappuccino",
       "description": "A double espresso with steamed and stretched textured milk",
-      "ingredients": "espresso, milk",
-      "price": 4
+      "image": "../images/coffee/cappuccino.jpeg"
     },
     {
       "name": "Espresso",
       "description": "Our regularly-changing single origin espresso - balanced and sweet.",
-      "ingredients": "house espresso, milk",
-      "price": 3
+      "image": "../images/coffee/espresso.jpeg"
+    },
+    {
+      "name": "Piccolo",
+      "description": "Stronger than a flat white, 1:2 espresso: textured milk",
+      "image": "../images/coffee/piccolo.jpeg"
+    },
+    {
+      "name": "Espresso Macchiato",
+      "description": "Espresso 'marked' with a little textured milk",
+      "image": "../images/coffee/espressoMacchiato.jpeg"
+    }
+  ],
+  "nonCoffee": [
+    {
+      "name": "Hot Chocolate",
+      "description": "Hot chocolate and textured steamed milk.",
+      "image": "../images/nonCoffee/hotChoco.jpeg"
+    },
+    {
+      "name": "Chai Latte",
+      "description": "Chai steamed together with milk for a velvety smooth lightly spiced drink",
+      "image": "../images/nonCoffee/chaiLatte.jpeg"
+    },
+    {
+      "name": "Darjeeling",
+      "description": "From India, this is a first flush Darjeeling tea",
+      "image": "../images/nonCoffee/darjeeling.jpeg"
     }
   ]
 }
