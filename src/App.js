@@ -1,19 +1,15 @@
-import './App.css';
 import Header from './components/Header';
 import Main from './components/Main';
 import Menu from './components/Menu';
 import About from './components/About';
 import Plan from './components/Plan';
+import Footer from './components/Footer';
 import {
 	BrowserRouter as Router,
 	Navigate,
 	Route,
 	Routes,
 } from 'react-router-dom';
-import './fonts/Atkinson-Hyperlegible-Regular-102.ttf';
-import './fonts/Atkinson-Hyperlegible-Bold-102.ttf';
-import './fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf';
-import './fonts/Atkinson-Hyperlegible-Italic-102.ttf';
 
 function App() {
 	return (
@@ -32,6 +28,7 @@ function App() {
 
 					{/* Wildcard - if a route is entered in URL with no set path, it will redirect to Main */}
 				</Routes>
+				<Footer />
 			</Router>
 		</div>
 	);
