@@ -48,6 +48,7 @@
 	left: 0;
 	top: 10rem;
 	background-color: var(--main-black);
+	opacity: 0.9;
 	z-index: -1;
 }
 @media (min-width: 640px) {

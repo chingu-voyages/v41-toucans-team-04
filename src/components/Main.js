@@ -86,6 +86,7 @@ const Main = () => {
 			</section>
 			<section className="features">
 				<div className="features-container container">
+					<div className="features-bg"></div>
 					<h3 className="features-title">Why choose us?</h3>
 					<p className="features-text">
 						A large part of our role is choosing which particular
