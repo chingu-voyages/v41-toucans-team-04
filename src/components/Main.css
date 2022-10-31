@@ -6,8 +6,8 @@ h4,
 h5,
 h6,
 .btn {
-	font-family: 'EB Garamond', serif;
-	font-weight: 800;
+	font-family: 'Inter Tight', sans-serif;
+	font-weight: 700;
 }
 p {
 	text-align: center;
@@ -314,7 +314,7 @@ p {
 	gap: 2rem;
 }
 .works-item-no {
-	font-family: 'EB Garamond', serif;
+	font-family: 'Inter Tight', sans-serif;
 	font-weight: 800;
 }
 .works-item {

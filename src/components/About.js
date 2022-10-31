@@ -2,21 +2,20 @@ import './About.css';
 import video from '../assets/video-filter-cup.mp4';
 import poster from '../assets/image-hero-blackcup.jpg';
 import barista from '../assets/image-barista.png';
-import coffee from '../assets/image-grinder.jpg';
+import coffee from '../assets/image-plant.jpg';
 const About = () => {
 	return (
 		<>
 			<section className="about">
 				<div className="main-container container">
-					<h1 className="main-title">About Us</h1>
-					<p className="main-text">
-						Toucan coffee began its journey of exotic discovery in
-						2022, highlighting stories of coffee from around the
-						world. We have since been dedicated to bring the perfect
-						cup - from bean to brew - in every shipment.
-					</p>
+					<h1 className="main-title">
+						We're redefining <br />
+						what it means to <br />
+						brew great coffee.
+					</h1>
 					<video
 						src={video}
+						type="video/mp4"
 						poster={poster}
 						autoPlay
 						loop
@@ -29,8 +28,9 @@ const About = () => {
 			</section>
 			<section className="mission">
 				<div className="mission-container container">
-					<div>
-						<h2>Our mission</h2>
+					<img src={barista} alt="barista" />
+					<div className="mission-text">
+						<h2 className="mission-title">Our mission</h2>
 						<p>
 							We’re built on a simple mission and a commitment to
 							doing good along the way. We want to make it easy for
@@ -48,13 +48,14 @@ const About = () => {
 							native growing region.
 						</p>
 					</div>
-					<img src={barista} alt="barista" />
 				</div>
 			</section>
 			<section className="quality">
 				<div className="quality-container container">
-					<div>
-						<h2>Uncompromising quality</h2>
+					<img src={coffee} alt="coffee beans" />
+					<div className="quality-bg"></div>
+					<div className="quality-text">
+						<h2 className="quality-title">Uncompromising quality</h2>
 						<p>
 							Although we work with growers who pay close attention to
 							all stages of harvest and processing, we employ, on our
@@ -65,7 +66,6 @@ const About = () => {
 							that brewing is easy and enjoyable.
 						</p>
 					</div>
-					<img src={coffee} alt="coffee beans" />
 				</div>
 			</section>
 		</>
