@@ -2,19 +2,20 @@ import "./css/Menu.css";
 import video from "../assets/video-espresso-coffee.mp4";
 import poster from "../assets/image-coffee-shop.jpg";
 import { useEffect, useState } from "react";
-// import data from "../assets/data.json";
-import axios from "axios";
+import data from "../assets/data.json";
 import Card from "./Card";
+
 export default function Menu() {
-  const [card, setCard] = useState([]);
-  // useEffect(() => {
-  //   setCard(data.coffees);
-  // }, []);
+  const [card, setCard] = useState(data.coffee);
+  const [toggleState, setToggleState] = useState(1);
+
+  const toggleStateHandler = (index) => {
+    setToggleState(index);
+  };
   useEffect(() => {
-    axios.get(`https://api.sampleapis.com/coffee/hot`).then((res) => {
-      setCard(res.data);
-    });
-  }, []);
+    setCard(card);
+  }, [card]);
+
   return (
     <>
       <section className="menu">
@@ -33,7 +34,35 @@ export default function Menu() {
 
       <section className="cards">
         <div className="cards-container container">
-          <ul>
+          <div className="tabMenu">
+            <div
+              className={toggleState === 1 ? "active" : ""}
+              onClick={() => {
+                toggleStateHandler(1);
+                setCard(data.coffee);
+              }}
+            >
+              Coffee
+            </div>
+            <div
+              className={toggleState === 2 ? "active" : ""}
+              onClick={() => {
+                toggleStateHandler(2);
+                setCard(data.nonCoffee);
+              }}
+            >
+              Non-Coffee
+            </div>
+            <div
+              className={toggleState === 3 ? "active" : ""}
+              onClick={() => {
+                toggleStateHandler(3);
+              }}
+            >
+              Food
+            </div>
+          </div>
+          <ul className="menuList">
             {card.map((item, idx) => {
               return <Card data={item} key={idx} />;
             })}

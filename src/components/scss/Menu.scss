@@ -1,49 +1,62 @@
-#menu {
+.cards {
   padding-top: 3em;
+  .cards-container {
+    padding: 1rem;
+  }
   .menuList {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 70vw;
-    margin: 0 auto;
+    width: 100%;
+    flex-wrap: wrap;
     min-width: 300px;
+    > * {
+      flex: 0 0 33.3333%;
+    }
   }
 }
 .tabMenu {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
   margin: 0 auto 3em;
-  width: 70vw;
+  margin-top: 2rem;
+  border-bottom: 3px solid var(--main-bg);
   > div {
-    width: 34%;
-    padding: 10px 0;
-    border: 3px solid var(--main-white);
-    text-align: center;
-    font-family: "EB Garamond";
+    width: 30%;
+    font-family: "Inter Tight";
+    font-size: 1.5rem;
     font-weight: 700;
-    font-size: 30px;
+    border: 3px solid var(--main-bg);
+    border-bottom: none;
+    text-align: center;
+    padding: 1rem 2rem;
     cursor: pointer;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    &:not(:last-child) {
-      // border-right: none;
-    }
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
     &.active {
+      color: var(--main-white);
       border-bottom: none;
+      background-color: var(--main-bg);
     }
   }
 }
-
-@media all and (min-width: 960px) {
-  #menu {
+@media all and (max-width: 950px) {
+  .cards {
     .menuList {
-      justify-content: space-between;
-      flex-direction: row;
-      flex-wrap: wrap;
-      width: clamp(70vw, 50vw, 300px);
+      width: clamp(100%, 50vw, 300px);
+      > * {
+        flex: 0 0 50%;
+      }
     }
-    .tabMenu {
-      width: clamp(70vw, 50vw, 300px);
+  }
+  .tabMenu {
+    width: clamp(100%, 50vw, 300px);
+  }
+}
+@media all and (max-width: 768px) {
+  .cards {
+    .menuList {
+      align-items: center;
+      flex-direction: column;
     }
   }
 }
