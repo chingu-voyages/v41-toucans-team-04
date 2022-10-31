@@ -1,0 +1,34 @@
+.footer {
+	display: relative;
+	background-color: var(--main-black);
+}
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.footer .nav-logo {
+	margin: 2rem 0 0.5rem;
+}
+.footer .nav-title {
+	color: var(--main-white);
+}
+.footer-nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0;
+}
+.footer .nav-link {
+	color: var(--main-grey);
+	font-size: 0.9rem;
+	padding: 0.5rem;
+}
+.footer-social-menu {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	margin: 0.5rem 0 2rem;
+}
