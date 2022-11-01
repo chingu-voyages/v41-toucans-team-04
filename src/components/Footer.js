@@ -9,24 +9,30 @@ export default function Footer() {
 		<>
 			<footer className="footer">
 				<div className="footer-container container">
-					<div className="nav-logo">
-						<img src={toucan} className="nav-img" alt="toucan logo" />
-						<h2 className="nav-title">Toucan Coffee</h2>
+					<div className="footer-nav">
+						<div className="nav-logo">
+							<img
+								src={toucan}
+								className="nav-img"
+								alt="toucan logo"
+							/>
+							<h2 className="nav-title">Toucan Coffee</h2>
+						</div>
+						<ul className="footer-menu">
+							<Link to="/">
+								<li className="nav-link">Home</li>
+							</Link>
+							<Link to="/about">
+								<li className="nav-link">About Us</li>
+							</Link>
+							<Link to="/menu">
+								<li className="nav-link">Menu</li>
+							</Link>
+							<Link to="/plan">
+								<li className="nav-link">Plans</li>
+							</Link>
+						</ul>
 					</div>
-					<ul className="footer-nav">
-						<Link to="/">
-							<li className="nav-link">Home</li>
-						</Link>
-						<Link to="/about">
-							<li className="nav-link">About Us</li>
-						</Link>
-						<Link to="/menu">
-							<li className="nav-link">Menu</li>
-						</Link>
-						<Link to="/plan">
-							<li className="nav-link">Plans</li>
-						</Link>
-					</ul>
 					<ul className="footer-social-menu">
 						<li>
 							<img src={facebook} alt="facebook" />
