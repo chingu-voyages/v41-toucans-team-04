@@ -1,3 +1,51 @@
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Inter Tight', sans-serif;
+	font-weight: 700;
+  background-color: var(--main-white);
+}
+.merch {
+  display: flex;
+  width: 100%;
+  color: black;
+/*   color: #4c243b; */
+}
+.merch h1 {
+  font-size: 1rem;
+}
+.merch p {
+  font-size: 0.8rem;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 30%;
+}
+img {
+  width: 250px;
+  height: 300px;
+  align-items: center;
+}
+.card .name {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+.card .description {
+  font-size: 0.7rem;
+  overflow-x: hidden;
+}
+button{
+  background-color: var(--main-bg);
+  color: white;
+  border-radius: 10px; 
+  outline: none;
+  padding: 10px;
+}
+
+=======
 body {
   padding: 0px;
   margin: 0px;
@@ -66,9 +114,3 @@ button{
   outline: none;
   padding: 10px;
 }
-
-
-
-
-
-

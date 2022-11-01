@@ -1,3 +1,5 @@
+
+
 import Header from './components/Header';
 import Main from './components/Main';
 import Menu from './components/Menu';
@@ -12,6 +14,7 @@ import {
 } from 'react-router-dom';
 
 function App() {
+
 	return (
 		<div className="App">
 			<Router>
@@ -32,6 +35,3 @@ function App() {
 			</Router>
 		</div>
 	);
-}
-
-export default App;

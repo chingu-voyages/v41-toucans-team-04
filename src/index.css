@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: 'Atkinson Hyperlegible';
 	src: url('./fonts/Atkinson-Hyperlegible-Regular-102.ttf')
@@ -34,4 +35,5 @@ body {
 	overflow-x: hidden;
 	min-height: 100vh;
 	min-width: 100vw;
+
 }
