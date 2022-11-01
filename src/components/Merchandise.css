@@ -1,15 +1,6 @@
-/* we declared body on index.css */
-/* body {
-  padding: 0px;
-  margin: 0px;
-  font-family: "Inter Tight", sans-serif;
-  font-weight: 700;
-  background-color: var(--main-white);
-} */
 .merch-hero {
 	margin-bottom: 4rem;
 }
-/* this becomes the section, we declare flex in merch-container */
 .merch {
 	color: black;
 	/* display: flex; */
