@@ -128,12 +128,12 @@ const Main = () => {
 					</div>
 				</div>
 			</section>
-			<section className="works">
-				<div className="works-container container">
-					<h5 className="works-title">How it Works</h5>
-					<div className="works-items">
-						<div className="works-item">
-							<p className="works-item-no">O1</p>
+			<section className="info">
+				<div className="info-container container">
+					<h5 className="info-title">How it Works</h5>
+					<div className="info-items">
+						<div className="info-item">
+							<p className="info-item-no">O1</p>
 							<h6>Pick Your Coffee</h6>
 							<p>
 								Select from our evolving range of artisan coffees. Our
@@ -142,8 +142,8 @@ const Main = () => {
 								month for you to try out.
 							</p>
 						</div>
-						<div className="works-item">
-							<p className="works-item-no">O2</p>
+						<div className="info-item">
+							<p className="info-item-no">O2</p>
 							<h6>Choose the frequency</h6>
 							<p>
 								Customize your order frequency, quantity, even your
@@ -152,8 +152,8 @@ const Main = () => {
 								portal.
 							</p>
 						</div>
-						<div className="works-item">
-							<p className="works-item-no">O3</p>
+						<div className="info-item">
+							<p className="info-item-no">O3</p>
 							<h6>Receive and enjoy</h6>
 							<p>
 								We ship your package within 48 hours, freshly roasted.

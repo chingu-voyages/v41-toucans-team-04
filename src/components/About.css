@@ -1,3 +1,4 @@
+/* hero */
 .about-hero .hero-title {
 	font-size: 2.5rem;
 	margin-bottom: 3rem;
@@ -5,10 +6,12 @@
 .about-hero .hero-container {
 	margin-bottom: 2rem;
 }
-.quality {
-	margin-bottom: 2rem;
+/* sections */
+.mission,
+.quality,
+.info-hq {
+	margin: 4rem 0;
 }
-/* mission */
 .mission-container,
 .quality-container {
 	position: relative;
@@ -21,7 +24,7 @@
 }
 .mission-title,
 .quality-title {
-	margin: 2rem 0;
+	margin: 1rem 0;
 	font-size: 2rem;
 }
 .mission-text p,
@@ -32,27 +35,32 @@
 .quality-text {
 	color: var(--main-white);
 }
-/* img */
 .mission img,
 .quality img {
 	width: 100%;
 	max-width: 320px;
 	height: auto;
-	margin: 2rem 0;
+	margin: 1rem 0;
 	border-radius: 8px;
-}
-.quality img {
-	max-width: 480px;
 }
 .quality-bg {
 	position: absolute;
 	width: 100%;
-	height: 90%;
+	height: 32rem;
 	left: 0;
-	top: 10rem;
+	top: 14rem;
 	background-color: var(--main-black);
 	opacity: 0.9;
 	z-index: -1;
+}
+/* info-hq */
+.info-hq img {
+	width: 100%;
+	max-width: 240px;
+	height: auto;
+}
+.info-hq .info-container {
+	margin-top: 6rem;
 }
 @media (min-width: 640px) {
 	.about-hero .hero-title {
@@ -62,25 +70,38 @@
 	.mission-container {
 		flex-direction: row;
 	}
+	.quality-container {
+		flex-direction: row-reverse;
+	}
+	.quality-text {
+		margin-top: 4rem;
+	}
 	.mission-title,
 	.quality-title {
-		margin: 2rem 0;
 		font-size: 2rem;
 		text-align: left;
-		padding: 1rem;
+		padding: 0 1rem 1rem;
 	}
 	.mission-text p,
 	.quality-text p {
 		text-align: left;
 	}
 	.quality-bg {
-		top: 9rem;
+		top: 6rem;
+		height: 24rem;
+	}
+	.info-hq .info-items {
+		width: 100%;
 	}
 }
 @media (min-width: 1280px) {
+	.about-hero .hero-title {
+		font-size: 5rem;
+	}
 	.quality-bg {
 		border-radius: 8px;
 		top: 8rem;
+		height: 23rem;
 	}
 	.quality-container {
 		flex-direction: row-reverse;
@@ -91,7 +112,7 @@
 	.quality-text {
 		margin-top: 5rem;
 	}
-	.about-hero .hero-title {
-		font-size: 5rem;
+	.info-hq img {
+		max-width: 320px;
 	}
 }

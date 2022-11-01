@@ -2,7 +2,10 @@ import './About.css';
 import video from '../assets/video-filter-cup.mp4';
 import poster from '../assets/image-hero-blackcup.jpg';
 import barista from '../assets/image-barista.png';
-import coffee from '../assets/image-plant.jpg';
+import coffee from '../assets/image-plant.png';
+import us from '../assets/image-us.png';
+import ca from '../assets/image-ca.png';
+import uk from '../assets/image-uk.png';
 const About = () => {
 	return (
 		<>
@@ -65,6 +68,49 @@ const About = () => {
 							goal is to roast consistent, user-friendly coffee, so
 							that brewing is easy and enjoyable.
 						</p>
+					</div>
+				</div>
+			</section>
+			<section className="info-hq">
+				<div className="info-container container">
+					<h4 className="info-title">Our Headquarters</h4>
+					<div className="info-items">
+						<div className="info-item">
+							<img src={us} alt="us address" />
+							<h6>United States</h6>
+							<p>
+								street <br />
+								town
+								<br />
+								post code
+								<br />
+								phone
+							</p>
+						</div>
+						<div className="info-item">
+							<img src={ca} alt="ca address" />
+							<h6>Canada</h6>
+							<p>
+								street <br />
+								town
+								<br />
+								post code
+								<br />
+								phone
+							</p>
+						</div>
+						<div className="info-item">
+							<img src={uk} alt="uk address" />
+							<h6>United Kingdom</h6>
+							<p>
+								street <br />
+								town
+								<br />
+								post code
+								<br />
+								phone
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
