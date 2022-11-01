@@ -4,7 +4,7 @@ A coffee subscription site built with react
 
 ## Tech
 
-![Stack](https://skillicons.dev/icons?i=react,css)
+![Stack](https://skillicons.dev/icons?i=react,netlify,css)
 
 ## Team
 
