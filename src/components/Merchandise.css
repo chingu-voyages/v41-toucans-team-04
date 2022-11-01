@@ -26,15 +26,17 @@ img {
 }
 .card .name {
   font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: bold;
+  text-transform: capitalize;
 }
 .card .description {
   font-size: 0.7rem;
   overflow-x: hidden;
 }
-.card .line {
-  height: 2px;
-  width: 100%;
-  color: orangered;
+button{
+  background-color: var(--main-bg);
+  color: white;
+  border-radius: 10px; 
+  outline: none;
+  padding: 10px;
 }
+
