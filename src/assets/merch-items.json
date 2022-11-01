@@ -30,7 +30,7 @@
     },
     {
       "key": 5,
-      "name": "Gift Box 2",
+      "name": "Coasters",
       "description": "Set of six 10 cm absorbant drink coasters for your favorite for holding your favorite beverage. ",
       "img": "coasters.jpg",
       "price": "$15.99"
@@ -39,7 +39,7 @@
       "key": 6,
       "name": "Drip Coffee Jug",
       "description": "Pour over coffee maker with reusable stainless steel coffee filter for single cup. Perfect for home, travel or outdoor.",
-      "img": "pour-over.jpg",
+      "img": "pour-over.png",
       "price": "14.39"
     }
   ]
