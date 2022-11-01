@@ -1,57 +1,75 @@
-/* body {
-  padding: 0px;
-  margin: 0px;
-  font-family: "Inter Tight", sans-serif;
-  font-weight: 700;
-  background-color: var(--main-white);
-} */
+.merch-hero {
+	margin-bottom: 4rem;
+}
 .merch {
-  display: flex;
-  width: 100%;
-  color: black;
-  contain: content;
-  flex-wrap: wrap;
-  /*   color: #4c243b; */
+	color: black;
+	/* display: flex; */
+	/* width: 100%; */
+	/* contain: content;
+	flex-wrap: wrap; */
+	/*   color: #4c243b; */
+}
+.merch-container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.merch .card {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.75rem;
+	width: 320px;
+	/* we center with align-items and set same width with the img*/
+	/* margin: 0 auto; */
+	/* width: 30%; */
 }
 .merch h1 {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 .merch p {
-  font-size: 0.8rem;
+	font-size: 0.8rem;
 }
-.card-container {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  width: 30%;
-}
-
 .placeholder {
-  height: 500px;
-  width: 500px;
-  background-color: teal;
-  border: 1px solid darkblue;
+	/* 320px like in Menu */
+	height: 320px;
+	width: 320px;
+	background-color: teal;
+	border: 1px solid darkblue;
 }
-img {
-  width: 250px;
-  height: 300px;
-  align-items: center;
+.merch img {
+	width: 320px;
+	height: 320px;
+	align-items: center;
 }
-.card {
-  margin: 0 auto;
+/* .merch .card {
+	margin: 0 auto;
+} */
+.merch .card .name {
+	font-size: 0.8rem;
+	text-transform: capitalize;
 }
-.card .name {
-  font-size: 0.8rem;
-  text-transform: capitalize;
+.merch .card .description {
+	font-size: 0.7rem;
+	overflow-x: hidden;
 }
-.card .description {
-  font-size: 0.7rem;
-  overflow-x: hidden;
+.merch button {
+	background-color: var(--main-bg);
+	color: white;
+	border-radius: 10px;
+	outline: none;
+	padding: 10px;
 }
-button {
-  background-color: var(--main-bg);
-  color: white;
-  border-radius: 10px;
-  outline: none;
-  padding: 10px;
+/* media queries */
+@media (min-width: 768px) {
+	.merch-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		/* gap for space in between cards, padding for lateral space */
+		gap: 3rem;
+		padding: 0 3rem;
+	}
 }
