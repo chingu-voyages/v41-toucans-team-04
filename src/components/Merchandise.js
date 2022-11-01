@@ -1,3 +1,4 @@
+
 import React from "react";
 import "./Merchandise.css";
 
@@ -17,3 +18,4 @@ export default function Merchandise(props) {
     </section>
   );
 }
+

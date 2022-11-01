@@ -1,26 +1,14 @@
+
+/*
 .App {
-  background-color: wheat;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #61dafb;
-}
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: var(--main-white); 
+}*/
 
-.Merch {
-  background-color: #fff5ea;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #61dafb;
-}
-
-.App-h1,
-.App-p {
-  color: #4c243b;
-}

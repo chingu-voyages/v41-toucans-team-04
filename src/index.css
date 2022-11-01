@@ -1,13 +1,39 @@
-body {
-  margin: 0;
-  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
-}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('./fonts/Atkinson-Hyperlegible-Regular-102.ttf')
+		format('truetype');
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'Atkinson Hyperlegible';
+	src: url('./fonts/Atkinson-Hyperlegible-Bold-102.ttf')
+		format('truetype');
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Inter Tight';
+	src: url('./fonts/InterTight-Bold.ttf') format('truetype');
+	font-weight: 700;
+}
+:root {
+	--main-bg: #0e8784;
+	--main-black: #333d4b;
+	--main-white: #fefcf7;
+	--main-grey: #83888f;
+	--main-orange: #fdd6ba;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Atkinson Hyperlegible', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	min-height: 100vh;
+	min-width: 100vw;
+
 }
