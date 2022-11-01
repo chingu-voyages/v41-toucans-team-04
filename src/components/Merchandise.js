@@ -10,9 +10,8 @@ export default function Merchandise(props) {
           <img src={props.img} alt="" />
           <p className="name">{props.title}</p>
           <p className="description">{props.description}</p>
-          <span className="line"></span>
-          <p className="rating"></p>
-          <p className="price">$19.95 / LB</p>
+          <p className="price">{props.price}</p>
+        <button>Add to Card</button>
         </div>
       </div>
     </section>
