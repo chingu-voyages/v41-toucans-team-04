@@ -58,9 +58,12 @@
   font-family: "Inter Tight";
   font-size: 1.5rem;
   font-weight: 700;
+  color: var(--main-white);
   border: none;
   outline: none;
   text-align: left;
+  background-color: var(--main-bg);
+  border-radius: 8px;
 }
 .dropdownMenu .label .material-icons {
   position: absolute;
