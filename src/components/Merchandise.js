@@ -44,8 +44,8 @@ export default function Merchandise() {
 							// container should be outside map , will use merch-container
 							// <div className="card-container">
 							<div className="card">
-								{/* <img src={item.img} alt={item.name} /> */}
-								<div className="placeholder"></div>
+								{/* image location ../images/ */}
+								<img src={item.img} alt={item.name} />
 								<p className="name">{item.name}</p>
 								<p className="description">{item.description}</p>
 								<p className="price">{item.price}</p>
