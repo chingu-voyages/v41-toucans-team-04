@@ -18,7 +18,7 @@
 			"key": 3,
 			"name": "Mug",
 			"description": "A beautiful, rustic-looking terracotta clay mug that will keep your cup of java piping hot. Available in different textures and colours.",
-			"img": "../images/mug.png",
+			"img": "mug.png",
 			"price": "$22.00"
 		},
 		{
@@ -39,7 +39,7 @@
 			"key": 6,
 			"name": "Drip Coffee Jug",
 			"description": "Pour over coffee maker with reusable stainless steel coffee filter for single cup. Perfect for home, travel or outdoor.",
-			"img": "pour-over.jpg",
+			"img": "drip_coffee-bg.png",
 			"price": "14.39"
 		}
 	]
