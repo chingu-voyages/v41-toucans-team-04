@@ -1,4 +1,4 @@
-import "./Menu.css";
+import "./css/Menu.css";
 import video from "../assets/video-espresso-coffee.mp4";
 import poster from "../assets/image-coffee-shop.jpg";
 import { useEffect, useState } from "react";
@@ -10,6 +10,27 @@ export default function Menu() {
   const [menu, setMenu] = useState("Coffee");
   const [toggleState, setToggleState] = useState(1);
   const [dropdown, setDropdown] = useState(false);
+
+  const [open, setOpen] = useState(false);
+  const [cart, setCart] = useState([]);
+
+  const closeCart = () => {
+    setOpen(false);
+  };
+  const openCart = () => {
+    setOpen(true);
+  };
+
+  const addToCart = (newItem) => {
+    setCart([...cart, newItem]);
+  };
+
+  const removeFromCart = (item) => {
+    let hardCopy = [...cart];
+    hardCopy = hardCopy.filter((cartItem) => cartItem.id !== item.id);
+    setCart(hardCopy);
+  };
+
   const dropdownHandler = () => {
     setDropdown(!dropdown);
   };
@@ -20,8 +41,21 @@ export default function Menu() {
     setCard(card);
   }, [card]);
 
+  console.log(cart);
+
   return (
     <>
+      <ul className="cart">
+        {cart.map((item, idx) => {
+          return (
+            <li key={idx} id={idx}>
+              {/* <img src={item.image} alt="" /> */}
+              <div>{item.name}</div>
+              <button onClick={() => removeFromCart(item)}>Remove</button>
+            </li>
+          );
+        })}
+      </ul>
       <section className="menu-hero">
         <div className="hero-container container">
           <h1 className="hero-title">
@@ -106,7 +140,7 @@ export default function Menu() {
           </div>
           <ul className="menuList">
             {card.map((item, idx) => {
-              return <Card data={item} key={idx} />;
+              return <Card data={item} key={idx} add={addToCart} id={idx} />;
             })}
           </ul>
         </div>

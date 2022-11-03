@@ -1,11 +1,13 @@
 {
   "coffee": [
     {
+      "id": "c1",
       "name": "Long Black",
       "description": "Our long blacks keep their strength through the sizes - a double espresso for a small, three for a medium and four for a large",
       "image": "../images/coffee/longBlack.jpeg"
     },
     {
+      "id": "c2",
       "name": "Latte",
       "description": "A double espresso with steamed textured milk",
       "image": "../images/coffee/latte.jpeg"
