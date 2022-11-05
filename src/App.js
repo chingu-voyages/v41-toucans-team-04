@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Merchandise from "./components/Merchandise";
 import Menu from "./components/Menu";
 import About from "./components/About";
 import Plan from "./components/Plan";
@@ -21,7 +22,7 @@ export default function App() {
           <Route path="/menu" element={<Menu />} />
           <Route path="/about" element={<About />} />
           <Route path="/plan" element={<Plan />} />
-          {/*<Route path="/shopping" element={<Shop />} /> */}
+          <Route path="/shop" element={<Merchandise />} />
           {/* Components not made yet */}
 
           <Route path="*" element={<Navigate to="/" />} />
