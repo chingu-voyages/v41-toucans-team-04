@@ -1,63 +1,72 @@
 {
-  "coffee": [
-    {
-      "id": "c1",
-      "name": "Long Black",
-      "description": "Our long blacks keep their strength through the sizes - a double espresso for a small, three for a medium and four for a large",
-      "image": "../images/coffee/longBlack.jpeg"
-    },
-    {
-      "id": "c2",
-      "name": "Latte",
-      "description": "A double espresso with steamed textured milk",
-      "image": "../images/coffee/latte.jpeg"
-    },
-    {
-      "name": "Flat White",
-      "description": "We're unique in serving flat whites through the sizes. We keep the ratio of coffee:milk the same - a double espresso in small, three for a medium, four for a large.",
-      "image": "../images/coffee/flatWhite.jpeg"
-    },
-    {
-      "name": "Filter",
-      "description": "Our seasonally sourced, single origin filter coffee, batch brewed freshly.",
-      "image": "../images/coffee/filter.jpeg"
-    },
-    {
-      "name": "Cappuccino",
-      "description": "A double espresso with steamed and stretched textured milk",
-      "image": "../images/coffee/cappuccino.jpeg"
-    },
-    {
-      "name": "Espresso",
-      "description": "Our regularly-changing single origin espresso - balanced and sweet.",
-      "image": "../images/coffee/espresso.jpeg"
-    },
-    {
-      "name": "Piccolo",
-      "description": "Stronger than a flat white, 1:2 espresso: textured milk",
-      "image": "../images/coffee/piccolo.jpeg"
-    },
-    {
-      "name": "Espresso Macchiato",
-      "description": "Espresso 'marked' with a little textured milk",
-      "image": "../images/coffee/espressoMacchiato.jpeg"
-    }
-  ],
-  "nonCoffee": [
-    {
-      "name": "Hot Chocolate",
-      "description": "Hot chocolate and textured steamed milk.",
-      "image": "../images/nonCoffee/hotChoco.jpeg"
-    },
-    {
-      "name": "Chai Latte",
-      "description": "Chai steamed together with milk for a velvety smooth lightly spiced drink",
-      "image": "../images/nonCoffee/chaiLatte.jpeg"
-    },
-    {
-      "name": "Darjeeling",
-      "description": "From India, this is a first flush Darjeeling tea",
-      "image": "../images/nonCoffee/darjeeling.jpeg"
-    }
-  ]
+	"coffee": [
+		{
+			"name": "Long Black",
+			"description": "Our long blacks keep their strength through the sizes - a double espresso for a small, three for a medium and four for a large",
+			"image": "../images/coffee/longBlack.jpeg",
+			"price": 3
+		},
+		{
+			"name": "Latte",
+			"description": "A double espresso with steamed textured milk",
+			"image": "../images/coffee/latte.jpeg",
+			"price": 3
+		},
+		{
+			"name": "Flat White",
+			"description": "We're unique in serving flat whites through the sizes. We keep the ratio of coffee:milk the same - a double espresso in small, three for a medium, four for a large.",
+			"image": "../images/coffee/flatWhite.jpeg",
+			"price": 4
+		},
+		{
+			"name": "Filter",
+			"description": "Our seasonally sourced, single origin filter coffee, batch brewed freshly.",
+			"image": "../images/coffee/filter.jpeg",
+			"price": 4
+		},
+		{
+			"name": "Cappuccino",
+			"description": "A double espresso with steamed and stretched textured milk",
+			"image": "../images/coffee/cappuccino.jpeg",
+			"price": 5
+		},
+		{
+			"name": "Espresso",
+			"description": "Our regularly-changing single origin espresso - balanced and sweet.",
+			"image": "../images/coffee/espresso.jpeg",
+			"price": 4
+		},
+		{
+			"name": "Piccolo",
+			"description": "Stronger than a flat white, 1:2 espresso: textured milk",
+			"image": "../images/coffee/piccolo.jpeg",
+			"price": 4
+		},
+		{
+			"name": "Espresso Macchiato",
+			"description": "Espresso 'marked' with a little textured milk",
+			"image": "../images/coffee/espressoMacchiato.jpeg",
+			"price": 5
+		}
+	],
+	"nonCoffee": [
+		{
+			"name": "Hot Chocolate",
+			"description": "Hot chocolate and textured steamed milk.",
+			"image": "../images/nonCoffee/hotChoco.jpeg",
+			"price": 4
+		},
+		{
+			"name": "Chai Latte",
+			"description": "Chai steamed together with milk for a velvety smooth lightly spiced drink",
+			"image": "../images/nonCoffee/chaiLatte.jpeg",
+			"price": 4
+		},
+		{
+			"name": "Darjeeling",
+			"description": "From India, this is a first flush Darjeeling tea",
+			"image": "../images/nonCoffee/darjeeling.jpeg",
+			"price": 4
+		}
+	]
 }
