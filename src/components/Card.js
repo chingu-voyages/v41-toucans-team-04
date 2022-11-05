@@ -1,11 +1,16 @@
 import { useState } from "react";
 import "./css/Card.css";
 
-export default function Card({ data, add, id }) {
+export default function Card({ data, id, addToCart }) {
   const [flip, setFlip] = useState(true);
   const onClickFlip = () => {
     setFlip(!flip);
   };
+
+  const addCartHandler = () => {
+    addToCart(id, data.image, data.name);
+  };
+
   return (
     <li className="card">
       {flip ? (
@@ -19,7 +24,7 @@ export default function Card({ data, add, id }) {
       )}
       <div className="name">{data.name}</div>
       <div className="price">{data.price}</div>
-      <button onClick={() => add({ id: id, image: data.image, name: data.name })}>Add</button>
+      <button onClick={addCartHandler}>Add to Cart</button>
     </li>
   );
 }
