@@ -5,17 +5,19 @@ import { useEffect, useState } from "react";
 import data from "../assets/data.json";
 import Card from "./Card";
 
-export default function Menu() {
+export default function Menu(props) {
   const [card, setCard] = useState(data.coffee);
   const [menu, setMenu] = useState("Coffee");
   const [toggleState, setToggleState] = useState(1);
   const [dropdown, setDropdown] = useState(false);
+
   const dropdownHandler = () => {
     setDropdown(!dropdown);
   };
   const toggleStateHandler = (index) => {
     setToggleState(index);
   };
+
   useEffect(() => {
     setCard(card);
   }, [card]);
@@ -106,7 +108,7 @@ export default function Menu() {
           </div>
           <ul className="menuList">
             {card.map((item, idx) => {
-              return <Card data={item} key={idx} />;
+              return <Card data={item} key={idx} id={idx} addToCart={props.addToCart} />;
             })}
           </ul>
         </div>

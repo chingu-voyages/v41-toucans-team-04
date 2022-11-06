@@ -1,46 +1,46 @@
 {
   "merch": [
-    {
-      "key": 1,
-      "name": "Canvas Coffee Tote bag",
-      "description": "The perfect lightweight tote bag made from 100% recycled canvas",
-      "img": "tote-bag.png",
-      "price": "$20.00"
-    },
-    {
-      "key": 2,
-      "name": "Coffee Tumbler",
-      "description": "The perfect size coffee tumbler for when you're on the go. Insulated stainless steel with removable lid.",
-      "img": "tumblerbg.png",
-      "price": "$17.95"
-    },
-    {
-      "key": 3,
-      "name": "Mug",
-      "description": "A beautiful, rustic-looking terracotta clay mug that will keep your cup of java piping hot. Available in different textures and colours.",
-      "img": "mug.jpg",
-      "price": "$22.00"
-    },
-    {
-      "key": 4,
-      "name": "Coffee Gift basket",
-      "description": "The perfect gift to send your favorite coffee lover. Gift includes premium roasted coffee beans,   ",
-      "img": "giftbox1.png",
-      "price": "49.00"
-    },
-    {
-      "key": 5,
-      "name": "Coasters",
-      "description": "Set of 4 purplish pink natural agate coffee coasters plated with brass.",
-      "img": "coasters.jpg",
-      "price": "$15.99"
-    },
-    {
-      "key": 6,
-      "name": "Drip Coffee Jug",
-      "description": "Pour over coffee maker with reusable stainless steel coffee filter for single cup. Perfect for home, travel or outdoor.",
-      "img": "pour-over.png",
-      "price": "14.39"
-    }
-  ]
+		{
+			"key": 1,
+			"name": "Canvas Coffee Tote bag",
+			"description": "The perfect lightweight tote bag made from 100% recycled canvas",
+			"img": "tote-bag.png",
+			"price": "$20.00"
+		},
+		{
+			"key": 2,
+			"name": "Coffee Tumbler",
+			"description": "The perfect size coffee tumbler for when you're on the go. Insulated stainless steel with removable lid.",
+			"img": "tumblerbg.png",
+			"price": "$17.95"
+		},
+		{
+			"key": 3,
+			"name": "Mug",
+			"description": "A beautiful, rustic-looking terracotta clay mug that will keep your cup of java piping hot. Available in different textures and colours.",
+			"img": "mug.png",
+			"price": "$22.00"
+		},
+		{
+			"key": 4,
+			"name": "Coffee Gift basket",
+			"description": "The perfect gift to send your favorite coffee lover. Gift includes premium roasted coffee beans,   ",
+			"img": "giftbox1.png",
+			"price": "49.00"
+		},
+		{
+			"key": 5,
+			"name": "Gift Box 2",
+			"description": "Set of six 10 cm absorbant drink coasters for your favorite for holding your favorite beverage. ",
+			"img": "coasters.jpg",
+			"price": "$15.99"
+		},
+		{
+			"key": 6,
+			"name": "Drip Coffee Jug",
+			"description": "Pour over coffee maker with reusable stainless steel coffee filter for single cup. Perfect for home, travel or outdoor.",
+			"img": "drip_coffee-bg.png",
+			"price": "14.39"
+		}
+	]
 }
