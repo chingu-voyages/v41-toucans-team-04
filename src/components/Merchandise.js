@@ -48,8 +48,8 @@ export default function Merchandise() {
                 </div>
                 <p className="name">{item.name}</p>
                 <p className="description">{item.description}</p>
-                <p className="price">{item.price}</p>
-                <button>Add to Card</button>
+                <p className="price">${item.price}</p>
+                <button>Add to Cart</button>
               </div>
             );
           })}
