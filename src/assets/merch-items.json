@@ -4,7 +4,7 @@
       "key": 1,
       "name": "Canvas tote bag",
       "description":
-        "The perfect lightweight tote bag made from 100% recycled canvas",
+        "One-sized tote bag made from 100% recycled canvas. Available in various prints.",
       "img": "tote-bag.png",
       "price": "20.99"
     },
@@ -12,7 +12,7 @@
       "key": 2,
       "name": "Coffee tumbler",
       "description":
-        "The perfect size coffee tumbler for when you're on the go. Insulated stainless steel with removable lid.",
+        "Perfectly sized 16oz coffee tumbler for when you're on the go. Insulated stainless steel with removable lid.",
       "img":"tumbler.png",
       "price": "17.99"
     },
@@ -20,7 +20,7 @@
       "key": 3,
       "name": "Mug",
       "description":
-        "A beautiful terracotta clay mug to keep your cup of java piping hot. Available in different sizes.",
+        "Terracotta mug to keep your cup of java piping hot. Handcrafted in Turkey. Available in different sizes and colors.",
       "img":"mug.png",
       "price": "22.99"
     },
@@ -28,7 +28,7 @@
       "key": 4,
       "name": "Gift basket",
       "description":
-        "The perfect gift to send your favorite coffee lover. Gift includes premium roasted coffee beans,   ",
+        "The perfect gift for your favorite coffee lover. Includes one bag of our premium roasted beans.",
       "img":"giftbox1.png",
       "price": "49.99"
     },
@@ -36,7 +36,7 @@
       "key": 5,
       "name": "Coasters",
       "description":
-        "Set of six 10 cm absorbant drink coasters for your favorite for holding your favorite beverage. ",
+        "Set of six 10 cm absorbant drink coasters to hold your favorite beverage (like our coffee). ",
       "img":"coasters.png",
       "price": "15.99"
     },

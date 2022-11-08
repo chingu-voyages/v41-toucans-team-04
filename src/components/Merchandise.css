@@ -5,6 +5,9 @@
 .merch-hero {
   margin-bottom: 4rem;
 }
+p.hero-text {
+  background-image: black;
+}
 
 /*---FLEXBOX/SETUP---*/
 .merch-container {

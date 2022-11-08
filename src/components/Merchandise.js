@@ -1,7 +1,7 @@
 import "./Merchandise.css";
 import { useEffect, useState } from "react";
 import data from "../assets/merch-items.json";
-import video from "../assets/video-filter-cup.mp4";
+// import video from "../images/merch/group-sipping-coffee.mp4";
 import poster from "../assets/image-coffee-shop.jpg";
 
 export default function Merchandise() {
@@ -17,13 +17,16 @@ export default function Merchandise() {
         <div className="hero-container container">
           <h1 className="hero-title">
             {/* add any title */}
-            Love our coffee <br />
-            Enjoy our merch <br />
+            Sip our coffee. <br />
+            Grip our merch. <br />
           </h1>
           {/* add any text */}
-          <p className="hero-text">Toucan Coffee shop</p>
+          <p className="hero-text">
+            Elevate your experience by pairing our coffee with any of our
+            curated products below!
+          </p>
           <video
-            src={video}
+            src="../images/merch/coffee-cheers.mp4"
             type="video/mp4"
             poster={poster}
             autoPlay
