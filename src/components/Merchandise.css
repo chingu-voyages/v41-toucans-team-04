@@ -65,6 +65,7 @@
 .merch button:hover {
   width: 180px;
   transition: width 0.7s;
+  cursor: pointer;
 }
 .merch button:hover i {
   opacity: 0;
