@@ -19,7 +19,7 @@ export default function Header() {
 						<li className="nav-link">Home</li>
 					</Link>
 					<Link to="/about">
-						<li className="nav-link">About Us</li>
+						<li className="nav-link">About</li>
 					</Link>
 					<Link to="/menu">
 						<li className="nav-link">Menu</li>
@@ -40,7 +40,7 @@ export default function Header() {
 						</Link>
 						<Link to="/about">
 							<li className="nav-link-mobile" onClick={closeMenu}>
-								About Us
+								About
 							</li>
 						</Link>
 						<Link to="/menu">
@@ -49,11 +49,13 @@ export default function Header() {
 							</li>
 						</Link>
 						<Link to="/shop">
-							<li className="nav-link">Shop</li>
+							<li className="nav-link-mobile" onClick={closeMenu}>
+								Shop
+							</li>
 						</Link>
 						<Link to="/plan">
 							<li className="nav-link-mobile" onClick={closeMenu}>
-								Create your Plan
+								Plans
 							</li>
 						</Link>
 					</ul>

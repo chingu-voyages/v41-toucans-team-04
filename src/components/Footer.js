@@ -23,7 +23,7 @@ export default function Footer() {
 								<li className="nav-link">Home</li>
 							</Link>
 							<Link to="/about">
-								<li className="nav-link">About Us</li>
+								<li className="nav-link">About</li>
 							</Link>
 							<Link to="/menu">
 								<li className="nav-link">Menu</li>

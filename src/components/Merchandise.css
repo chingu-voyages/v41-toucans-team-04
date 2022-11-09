@@ -81,7 +81,6 @@ p.hero-text {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* gap for space in between cards, padding for lateral space */
     gap: 3rem;
     padding: 0 3rem;
   }
