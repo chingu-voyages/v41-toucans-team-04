@@ -2,7 +2,7 @@ import React from 'react';
 import './Merchandise.css';
 import { useEffect, useState } from 'react';
 import data from '../assets/merch-items.json';
-import video from '../assets/video-filter-cup.mp4';
+import video from "../images/merch/group-sipping-coffee.mp4";
 import poster from '../assets/image-coffee-shop.jpg';
 
 export default function Merchandise() {
@@ -17,11 +17,11 @@ export default function Merchandise() {
 			<section className="merch-hero">
 				<div className="hero-container container">
 					<h1 className="hero-title">
-						{/* add any title */}
-						Love our coffee <br />
-						Enjoy our merch <br />
+						Sip our coffee. <br />
+            Grip our merch. <br />
 					</h1>
-					{/* add any text */}
+					Elevate your experience by pairing our coffee with any of our
+            curated products below!
 					<p className="hero-text">Toucan Coffee shop</p>
 					<video
 						src={video}
@@ -37,25 +37,22 @@ export default function Merchandise() {
 				</div>
 			</section>
 			<section className="merch">
-				{/* add this div for layout */}
-				<div className="merch-container container">
-					{products.map((item) => {
-						return (
-							// container should be outside map , will use merch-container
-							// <div className="card-container">
-							<div className="card">
-								{/* image location ../images/ */}
-								<img src={item.img} alt={item.name} />
-								<p className="name">{item.name}</p>
-								<p className="description">{item.description}</p>
-								<p className="price">{item.price}</p>
-								<button>Add to Card</button>
-							</div>
-							// </div>
-						);
-					})}
-				</div>
-			</section>
+        <div className="merch-container container">
+          {products.map((item) => {
+            return (
+              <div className="card">
+                <div className="images">
+                  <img src={`../images/merch/${item.img}`} alt={item.name} />
+                </div>
+                <p className="name">{item.name}</p>
+                <p className="description">{item.description}</p>
+                <p className="price">${item.price}</p>
+                <button>Add to Cart</button>
+              </div>
+            );
+          })}
+        </div>
+      </section>
 		</>
 	);
 }
