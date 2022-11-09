@@ -1,11 +1,11 @@
 import './About.css';
-import video from '../assets/video-filter-cup.mp4';
-import poster from '../assets/image-hero-blackcup.jpg';
-import barista from '../assets/image-barista.png';
-import coffee from '../assets/image-plant.png';
-import us from '../assets/image-us.png';
-import ca from '../assets/image-ca.png';
-import uk from '../assets/image-uk.png';
+import video from '../assets/videos/video-filter-cup.mp4';
+import poster from '../assets/images/image-hero-blackcup.jpg';
+import barista from '../assets/images/image-barista.png';
+import coffee from '../assets/images/image-plant.png';
+import us from '../assets/images/image-us.png';
+import ca from '../assets/images/image-ca.png';
+import uk from '../assets/images/image-uk.png';
 const About = () => {
 	return (
 		<>

@@ -1,13 +1,13 @@
 import './Main.css';
-import video from '../assets/video-coffee.mp4';
-import poster from '../assets/image-hero-coffeepress.jpg';
-import danche from '../assets/image-danche.png';
-import espresso from '../assets/image-gran-espresso.png';
-import piccollo from '../assets/image-piccollo.png';
-import planalto from '../assets/image-planalto.png';
-import bean from '../assets/icon-coffee-bean.svg';
-import gift from '../assets/icon-gift.svg';
-import truck from '../assets/icon-truck.svg';
+import video from '../assets/videos/video-coffee.mp4';
+import poster from '../assets/images/image-hero-coffeepress.jpg';
+import danche from '../assets/images/image-danche.png';
+import espresso from '../assets/images/image-gran-espresso.png';
+import piccollo from '../assets/images/image-piccollo.png';
+import planalto from '../assets/images/image-planalto.png';
+import bean from '../assets/icons/icon-coffee-bean.svg';
+import gift from '../assets/icons/icon-gift.svg';
+import truck from '../assets/icons/icon-truck.svg';
 
 const Main = () => {
 	return (

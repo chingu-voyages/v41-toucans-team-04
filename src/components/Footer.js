@@ -1,9 +1,9 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import toucan from '../assets/toucan-logo.png';
-import facebook from '../assets/icon-facebook.svg';
-import instagram from '../assets/icon-instagram.svg';
-import twitter from '../assets/icon-twitter.svg';
+import toucan from '../assets/images/toucan-logo.png';
+import facebook from '../assets/icons/icon-facebook.svg';
+import instagram from '../assets/icons/icon-instagram.svg';
+import twitter from '../assets/icons/icon-twitter.svg';
 export default function Footer() {
 	return (
 		<>

@@ -2,7 +2,7 @@ import './Header.css';
 import { useState } from 'react';
 import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
-import toucan from '../assets/toucan-logo.png';
+import toucan from '../assets/images/toucan-logo.png';
 export default function Header() {
 	const [isOpen, setIsOpen] = useState(false);
 	const closeMenu = () => setIsOpen(false);

@@ -1,6 +1,6 @@
 import './Plan.css';
-import video from '../assets/video-coffee-beans.mp4';
-import poster from '../assets/image-hero-whitecup.jpg';
+import video from '../assets/videos/video-coffee-beans.mp4';
+import poster from '../assets/images/image-hero-whitecup.jpg';
 const Plan = () => {
 	return (
 		<>
