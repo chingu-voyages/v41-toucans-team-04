@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./css/Card.css";
+import "./Card.css";
 
 export default function Card({ data, id, addToCart }) {
   const [flip, setFlip] = useState(true);

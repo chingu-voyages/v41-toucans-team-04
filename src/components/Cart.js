@@ -1,4 +1,4 @@
-import "./css/Cart.css";
+import "./Cart.css";
 
 export default function Cart(props) {
   const closeCart = () => {

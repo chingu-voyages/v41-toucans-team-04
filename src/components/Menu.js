@@ -1,4 +1,4 @@
-import "./css/Menu.css";
+import "./Menu.css";
 import video from "../assets/videos/video-espresso-coffee.mp4";
 import poster from "../assets/images/image-coffee-shop.jpg";
 import { useEffect, useState } from "react";

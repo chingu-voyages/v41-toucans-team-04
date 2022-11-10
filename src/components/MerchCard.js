@@ -1,5 +1,3 @@
-import "./css/Card.css";
-
 export default function MerchCard({ data, id, addToCart }) {
   const addCartHandler = () => {
     addToCart(id, data.name, data.price);
