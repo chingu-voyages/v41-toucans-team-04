@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Card.css";
+import "./css/Card.css";
 
 export default function Card({ data, id, addToCart }) {
   const [flip, setFlip] = useState(true);
@@ -8,7 +8,7 @@ export default function Card({ data, id, addToCart }) {
   };
 
   const addCartHandler = () => {
-    addToCart(id, data.image, data.name);
+    addToCart(id, data.name, data.price);
   };
 
   return (
@@ -19,11 +19,11 @@ export default function Card({ data, id, addToCart }) {
         </div>
       ) : (
         <p className="desc" onClick={onClickFlip}>
-          {data.description}
+          <span>{data.description}</span>
         </p>
       )}
       <div className="name">{data.name}</div>
-      <div className="price">{data.price}</div>
+      <div className="price">${data.price}</div>
       <button onClick={addCartHandler}>Add to Cart</button>
     </li>
   );

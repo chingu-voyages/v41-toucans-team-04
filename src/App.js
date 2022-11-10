@@ -13,11 +13,11 @@ export default function App() {
   const [open, setOpen] = useState(false);
   const [cart, setCart] = useState([]);
 
-  const addToCart = (id, image, name) => {
+  const addToCart = (id, name, price) => {
     const newItem = {
       id: id,
-      image: image,
       name: name,
+      price: price,
     };
     setCart([...cart, newItem]);
     setOpen(true);
@@ -39,7 +39,7 @@ export default function App() {
           <Route path="/menu" element={<Menu addToCart={addToCart} />} />
           <Route path="/about" element={<About />} />
           <Route path="/plan" element={<Plan />} />
-          <Route path="/shop" element={<Merchandise />} />
+          <Route path="/shop" element={<Merchandise addToCart={addToCart} />} />
           {/* Components not made yet */}
 
           <Route path="*" element={<Navigate to="/" />} />

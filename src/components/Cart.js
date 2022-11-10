@@ -1,4 +1,4 @@
-import "./Cart.css";
+import "./css/Cart.css";
 
 export default function Cart(props) {
   const closeCart = () => {
@@ -7,10 +7,6 @@ export default function Cart(props) {
   const openCart = () => {
     props.setOpen(true);
   };
-
-  // const removeCartHandler = () => {
-  //   props.removeFromCart();
-  // };
 
   return (
     <>
@@ -35,11 +31,10 @@ export default function Cart(props) {
                 props.cart.map((item, idx) => {
                   return (
                     <li key={idx} id={idx}>
-                      <div className="image">
-                        <img src={item.image} alt="" />
-                      </div>
-                      <div>{item.name}</div>
+                      <div className="cartItemName">{item.name}</div>
+                      <div className="cartItemPrice">${item.price}</div>
                       <button
+                        className="btnRemove"
                         onClick={() => {
                           props.removeFromCart(item);
                         }}

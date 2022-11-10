@@ -99,6 +99,30 @@
   color: var(--main-bg);
 }
 
+.alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vh;
+  height: 20vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--main-orange);
+  border-radius: 8px;
+  z-index: 1000;
+}
+.alert p {
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.alert p span {
+  display: block;
+  font-weight: 700;
+}
+
 @media all and (max-width: 950px) {
   .cards .menuList {
     width: clamp(100%, 50vw, 300px);
