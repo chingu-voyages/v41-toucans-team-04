@@ -4,16 +4,25 @@ import coffeemaker from '../assets/images/plan/coffee-maker.svg';
 import chemex from '../assets/images/plan/chemex.svg';
 import coldbrew from '../assets/images/plan/cold-brew.svg';
 import frenchpress from '../assets/images/plan/french-press.svg';
+import espressomachine from '../assets/images/plan/espresso-machine.svg';
 import pourover from '../assets/images/plan/pour-over.svg';
+import percolator from '../assets/images/plan/percolator.svg';
 import mokapot from '../assets/images/plan/moka-pot.svg';
+import milk from '../assets/images/plan/milk.svg';
+import mix from '../assets/images/plan/mixed.svg';
 import cup from '../assets/images/plan/cup.svg';
+import syrup from '../assets/images/plan/syrup.svg';
+import altmilk from '../assets/images/plan/alt-milk.svg';
+import sugar from '../assets/images/plan/sugar.svg';
 import ground from '../assets/images/plan/ground.svg';
+import wholebean from '../assets/images/plan/whole-bean.svg';
 import pods from '../assets/images/plan/refillable-pods.svg';
 
 export default function Quiz() {
 	const data = [
 		{
-			step: 1,
+			id: 1,
+			step: '1 of 7',
 			question: 'How do you usually make the coffee ?',
 			options: [
 				{
@@ -29,56 +38,178 @@ export default function Quiz() {
 					image: pourover,
 				},
 				{
+					title: 'Chemex',
+					image: chemex,
+				},
+				{
 					title: 'AeroPress',
 					image: aeropress,
+				},
+				{
+					title: 'Cold Brew',
+					image: coldbrew,
+				},
+				{
+					title: 'Espresso Machine',
+					image: espressomachine,
+				},
+				{
+					title: 'Percolator',
+					image: percolator,
 				},
 				{
 					title: 'Moka Pot',
 					image: mokapot,
 				},
+				{
+					title: 'Refillable Pods',
+					image: pods,
+				},
 			],
 		},
 		{
-			step: 2,
+			id: 2,
+			step: '2 of 7',
 			question: 'What is your coffee experience level ?',
 			options: [
 				{
-					title: 'pretty new',
-					image: mokapot,
+					title: `I'm pretty new to all of this`,
+					placeholder: `I'd like to start with something approachable and easy to love`,
 				},
 				{
-					title: 'intermediate stage',
-					image: cup,
+					title: `I'm at an intermediate stage`,
+					placeholder: `I buy premium coffee from the grocery store and I know a little about roast levels`,
 				},
 				{
-					title: 'advanced',
-					image: pods,
+					title: `I'm pretty advanced`,
+					placeholder: `I buy coffee from specialty roasters and I know the difference between blends and single origins`,
 				},
 				{
-					title: 'coffee nerd',
-					image: coldbrew,
+					title: `I'm a total coffee nerd`,
+					placeholder: `I know my Caturra from my Bourbon and cupping is my favorite hobby`,
 				},
 			],
 		},
 		{
-			step: 3,
+			id: 3,
+			step: '3 of 7',
 			question: 'Do you add anything to your coffee ?',
 			options: [
 				{
-					title: 'nope, black',
-					image: aeropress,
+					title: 'Nope, I take it black',
+					image: cup,
 				},
 				{
-					title: 'milk',
-					image: mokapot,
+					title: 'Milk or Cream',
+					image: milk,
 				},
 				{
-					title: 'syrups',
-					image: chemex,
+					title: 'A mix of these choices',
+					image: mix,
 				},
 				{
-					title: 'sugar',
+					title: 'Flavored Creamer or Syrups',
+					image: syrup,
+				},
+				{
+					title: 'Non-Dairy Milk',
+					image: altmilk,
+				},
+				{
+					title: 'Sugar or sweetener',
+					image: sugar,
+				},
+			],
+		},
+		{
+			id: 4,
+			step: '4 of 7',
+			question: 'What roast level do you typically enjoy ?',
+			options: [
+				{
+					title: 'Light roast',
+					placeholder: `More acidic & expressive of the coffee's original flavor`,
+				},
+				{
+					title: 'Medium roast',
+					placeholder:
+						'Just a hint of roasty flavor beginning to come through',
+				},
+				{
+					title: 'Dark roast',
+					placeholder:
+						'Some oil on the bean with deep, caramelized smokiness',
+				},
+				{
+					title: 'I defer to you',
+					placeholder: `We'll make a pick based on your other responses`,
+				},
+			],
+		},
+		{
+			id: 5,
+			step: '5 of 7',
+			question: 'How do you like your coffee to taste ?',
+			options: [
+				{
+					title: 'Classic and traditional',
+					placeholder: `I like coffee that tastes like coffee`,
+				},
+				{
+					title: 'Suprising and unconventional',
+					placeholder: 'Take me on an adventure',
+				},
+				{
+					title: 'I defer to you',
+					placeholder: `We'll make a pick based on your other responses`,
+				},
+				{
+					title: 'I defer to you',
+					placeholder: `We'll make a pick based on your other responses`,
+				},
+			],
+		},
+		{
+			id: 6,
+			step: '6 of 7',
+			question: 'Do you ground coffee, whole bean coffee, or both ?',
+			options: [
+				{
+					title: 'Whole bean',
+					image: wholebean,
+				},
+				{
+					title: 'Ground',
 					image: ground,
+				},
+				{
+					title: 'Both',
+					image: mix,
+				},
+			],
+		},
+		{
+			id: 7,
+			step: '7 of 7',
+			question:
+				'How frequently you want us to deliver fresh coffee to your door? ',
+			options: [
+				{
+					title: '1 bag every week',
+					placeholder:
+						'$18 per shipment. Includes free priority shipping.',
+					price: 72,
+				},
+				{
+					title: '1 bag every 2 weeks',
+					placeholder: '$20 per shipment. Includes free shipping.',
+					price: 40,
+				},
+				{
+					title: '2 bags every week',
+					placeholder:
+						'$32 per shipment. Includes free first-class shipping.',
+					price: 128,
 				},
 			],
 		},
@@ -92,13 +223,18 @@ export default function Quiz() {
 
 	return (
 		<div>
-			<h1> {data[step].question}</h1>
+			<h2> {data[step].question}</h2>
+			<h3> {data[step].step}</h3>
 			<div>
 				{data[step].options.map((d) => {
 					return (
 						<div role="button" onClick={() => toggleStep(step + 1)}>
 							{console.log(d)}
-							<img src={d.image} alt={d.title} />
+							{d.image ? (
+								<img src={d.image} alt={d.title} />
+							) : (
+								<p>{d.placeholder}</p>
+							)}
 							<p>{d.title}</p>
 						</div>
 					);
