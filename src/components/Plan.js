@@ -1,7 +1,8 @@
 import './Plan.css';
 import video from '../assets/videos/video-coffee-beans.mp4';
 import poster from '../assets/images/image-hero-whitecup.jpg';
-const Plan = () => {
+import Order from './Order';
+const Plan = (props) => {
 	return (
 		<>
 			<section className="plan-hero">
@@ -26,9 +27,7 @@ const Plan = () => {
 				</div>
 			</section>
 			<section className="plan">
-				<div className="plan-container container">
-					<h2 className="hero-title">Create your Plan</h2>
-				</div>
+				<Order addToCart={props.addToCart} />
 			</section>
 		</>
 	);
