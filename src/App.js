@@ -37,7 +37,7 @@ export default function App() {
 	return (
 		<div className="App">
 			<Router>
-				<Header />
+				<Header setOpen={setOpen} />
 				<Cart
 					removeFromCart={removeFromCart}
 					cart={cart}
