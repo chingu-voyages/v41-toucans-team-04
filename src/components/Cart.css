@@ -68,18 +68,20 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 70px;
-	height: 70px;
-	position: fixed;
+	font-size: 1.25rem;
+	width: 1.75rem;
+	height: 1.75rem;
+	/* position: fixed;
 	right: 30px;
-	bottom: 30px;
+	bottom: 30px; */
 	z-index: 99;
-	background: var(--main-orange);
+	/* background: var(--main-orange); */
 	border-radius: 100%;
 	cursor: pointer;
 }
-.cartIcon .material-icons {
-	font-size: 2rem;
+.cartIcon:hover {
+	color: var(--main-bg);
+	background-color: var(--main-orange);
 }
 
 .empty {

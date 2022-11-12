@@ -3,10 +3,14 @@ import { useState } from 'react';
 import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
 import toucan from '../assets/images/toucan-logo.png';
-export default function Header() {
+import { BsBag } from 'react-icons/bs';
+export default function Header({ setOpen }) {
 	const [isOpen, setIsOpen] = useState(false);
 	const closeMenu = () => setIsOpen(false);
 
+	const openCart = () => {
+		setOpen(true);
+	};
 	return (
 		<header id="header" className="header">
 			<nav id="nav" className="nav container">
@@ -30,6 +34,9 @@ export default function Header() {
 					<Link to="/plan">
 						<li className="nav-link">Plans</li>
 					</Link>
+					<div className="cartIcon" onClick={openCart}>
+						<BsBag />
+					</div>
 				</ul>
 				{isOpen && (
 					<ul className="nav-menu-mobile">
