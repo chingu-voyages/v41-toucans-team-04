@@ -1,8 +1,13 @@
 import './Plan.css';
+import React, { useState } from 'react';
 import video from '../assets/videos/video-coffee-beans.mp4';
 import poster from '../assets/images/image-hero-whitecup.jpg';
 import Order from './Order';
 const Plan = (props) => {
+	const [startQuiz, setStartQuiz] = useState(true);
+	const handleQuiz = () => {
+		setStartQuiz(false);
+	};
 	return (
 		<>
 			<section className="plan-hero">
@@ -27,7 +32,24 @@ const Plan = (props) => {
 				</div>
 			</section>
 			<section className="plan">
-				<Order addToCart={props.addToCart} />
+				<div className="container">
+					{startQuiz ? (
+						<div className="plan-quiz">
+							<h2 className="order-header">
+								Not sure which one is right for you?
+							</h2>
+							<p className="plan-text">
+								Find your perfect coffee match by taking our short
+								quiz.
+							</p>
+							<button className="btn hero-btn" onClick={handleQuiz}>
+								Start Quiz
+							</button>
+						</div>
+					) : (
+						<Order addToCart={props.addToCart} />
+					)}
+				</div>
 			</section>
 		</>
 	);
