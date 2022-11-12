@@ -1,4 +1,5 @@
 import './Main.css';
+import { Link } from 'react-router-dom';
 import video from '../assets/videos/video-coffee.mp4';
 import poster from '../assets/images/image-hero-coffeepress.jpg';
 import danche from '../assets/images/image-danche.png';
@@ -23,7 +24,9 @@ const Main = () => {
 						expertly curated artisan coffees from our best roasters
 						delivered directly to your door, at your schedule.
 					</p>
-					<button className="hero-btn btn">Create your Plan</button>
+					<Link to="/plan">
+						<button className="hero-btn btn">Create your Plan</button>
+					</Link>
 					<video
 						src={video}
 						type="video/mp4"
@@ -162,7 +165,9 @@ const Main = () => {
 							</p>
 						</div>
 					</div>
-					<button className="btn">Create your plan</button>
+					<Link to="/plan">
+						<button className="btn">Create your plan</button>
+					</Link>
 				</div>
 			</section>
 		</>

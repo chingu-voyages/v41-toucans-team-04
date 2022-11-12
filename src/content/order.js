@@ -135,10 +135,10 @@ const data = [
 				title: 'Dark roast',
 				text: 'Some oil on the bean with deep, caramelized smokiness',
 			},
-			{
-				title: 'I defer to you',
-				text: `We'll make a pick based on your other responses`,
-			},
+			// {
+			// 	title: 'I defer to you',
+			// 	text: `We'll make a pick based on your other responses`,
+			// },
 		],
 	},
 	{

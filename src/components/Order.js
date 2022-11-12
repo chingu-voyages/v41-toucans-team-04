@@ -21,7 +21,7 @@ export default function Quiz({ addToCart }) {
 		console.log(info);
 		setInfo((prev) => [...prev, target]);
 	};
-	let name = `${info[6]} of ${info[5]}, ${info[3]} for ${info[0]}`;
+	let name = `${info[6]} of ${info[5]}s, ${info[3]}ed for ${info[0]}`;
 	let random = Math.floor(Math.random() * (999 - 1 + 1)) + 1;
 	const addCartHandler = () => {
 		addToCart(random, name, price);
@@ -30,15 +30,14 @@ export default function Quiz({ addToCart }) {
 	return (
 		<div className="order-container container">
 			{showSummary ? (
-				<div>
-					<h2 className="hero-title">Perfect choice</h2>
-					<p className="hero-text">{name}</p>
-					<div className="order-summary">
-						<button className="btn" onClick={addCartHandler}>
-							Add to Cart
-						</button>
-						<p className="order-price">$ {price}</p>
-					</div>
+				<div className="order-summary">
+					<h2 className="order-title">Perfect choice!</h2>
+					<p>Your order:</p>
+					<p>{name}</p>
+					<p className="order-price">${price}</p>
+					<button className="btn hero-btn" onClick={addCartHandler}>
+						Add to Cart
+					</button>
 				</div>
 			) : (
 				<div>
