@@ -204,6 +204,11 @@ const data = [
 				text: '$32 per shipment. Includes free first-class shipping.',
 				price: 128,
 			},
+			{
+				title: '3 bags every 10 days',
+				text: '$48 per shipment. Includes 1 free bag every 5 orders',
+				price: 144,
+			},
 		],
 	},
 ];
