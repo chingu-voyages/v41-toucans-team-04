@@ -1,12 +1,10 @@
 .plan-hero {
 	margin-bottom: 2rem;
 }
-.plan-hero .hero-title {
-	margin-top: 4rem;
-}
-.plan-hero .hero-text {
-	margin-bottom: 4rem;
-}
 .plan {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 1rem 0;
 	margin-bottom: 6rem;
 }

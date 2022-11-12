@@ -1,3 +1,4 @@
+import './Order.css';
 import React, { useState } from 'react';
 import data from '../content/order';
 
@@ -27,24 +28,28 @@ export default function Quiz({ addToCart }) {
 	};
 
 	return (
-		<div>
+		<div className="order-container container">
 			{showSummary ? (
 				<div>
-					<h2>Perfect choice </h2>
-					<p>{name}</p>
-					<button onClick={addCartHandler}>
-						Add to basket {price}
-					</button>
+					<h2 className="hero-title">Perfect choice</h2>
+					<p className="hero-text">{name}</p>
+					<div className="order-summary">
+						<button className="btn" onClick={addCartHandler}>
+							Add to Cart
+						</button>
+						<p className="order-price">$ {price}</p>
+					</div>
 				</div>
 			) : (
 				<div>
-					<p> {data[step].step}</p>
-					<h2> {data[step].question}</h2>
-					<div>
+					<p className="order-step"> {data[step].step}</p>
+					<h2 className="order-header"> {data[step].question}</h2>
+					<div className="order-items">
 						{data[step].options.map((option, idx) => {
 							return (
 								<>
 									<div
+										className="order-item"
 										role="button"
 										key={idx}
 										onClick={() => {
@@ -52,11 +57,19 @@ export default function Quiz({ addToCart }) {
 											handlePrice(option.price);
 											handleInfo(option.title);
 										}}>
-										<p>{option.title}</p>
 										{option.image && (
-											<img src={option.image} alt={option.title} />
+											<img
+												className="order-image"
+												src={option.image}
+												alt={option.title}
+											/>
 										)}
-										{option.text && <p>{option.text}</p>}
+										<div className="order-para">
+											<p className="order-title">{option.title}</p>
+											{option.text && (
+												<p className="order-text">{option.text}</p>
+											)}
+										</div>
 									</div>
 								</>
 							);

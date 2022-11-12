@@ -27,9 +27,7 @@ const Plan = (props) => {
 				</div>
 			</section>
 			<section className="plan">
-				<div className="plan-container container">
-					<Order />
-				</div>
+				<Order addToCart={props.addToCart} />
 			</section>
 		</>
 	);
