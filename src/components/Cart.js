@@ -11,7 +11,7 @@ export default function Cart(props) {
 					<div className="backGround"></div>
 					<div className="cart">
 						<header>
-							<div>Shoping Cart</div>
+							<div>Shopping Cart</div>
 							<span className="material-icons" onClick={closeCart}>
 								close
 							</span>
