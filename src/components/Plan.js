@@ -2,7 +2,8 @@ import './Plan.css';
 import video from '../assets/videos/video-coffee-beans.mp4';
 import poster from '../assets/images/image-hero-whitecup.jpg';
 import Quiz from './Quiz';
-const Plan = () => {
+const Plan = (props) => {
+	console.log(props);
 	return (
 		<>
 			<section className="plan-hero">
@@ -30,7 +31,7 @@ const Plan = () => {
 				<div className="plan-container container">
 					<h2 className="hero-title">Create your Plan</h2>
 				</div>
-				<Quiz />
+				<Quiz addToCart={props.addToCart} />
 			</section>
 		</>
 	);

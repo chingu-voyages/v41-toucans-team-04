@@ -18,7 +18,7 @@ import ground from '../assets/images/plan/ground.svg';
 import wholebean from '../assets/images/plan/whole-bean.svg';
 import pods from '../assets/images/plan/refillable-pods.svg';
 
-export default function Quiz() {
+export default function Quiz({ addToCart }) {
 	const data = [
 		{
 			id: 1,
@@ -74,19 +74,19 @@ export default function Quiz() {
 			options: [
 				{
 					title: `I'm pretty new to all of this`,
-					placeholder: `I'd like to start with something approachable and easy to love`,
+					text: `I'd like to start with something approachable and easy to love`,
 				},
 				{
 					title: `I'm at an intermediate stage`,
-					placeholder: `I buy premium coffee from the grocery store and I know a little about roast levels`,
+					text: `I buy premium coffee from the grocery store and I know a little about roast levels`,
 				},
 				{
 					title: `I'm pretty advanced`,
-					placeholder: `I buy coffee from specialty roasters and I know the difference between blends and single origins`,
+					text: `I buy coffee from specialty roasters and I know the difference between blends and single origins`,
 				},
 				{
 					title: `I'm a total coffee nerd`,
-					placeholder: `I know my Caturra from my Bourbon and cupping is my favorite hobby`,
+					text: `I know my Caturra from my Bourbon and cupping is my favorite hobby`,
 				},
 			],
 		},
@@ -128,21 +128,19 @@ export default function Quiz() {
 			options: [
 				{
 					title: 'Light roast',
-					placeholder: `More acidic & expressive of the coffee's original flavor`,
+					text: `More acidic & expressive of the coffee's original flavor`,
 				},
 				{
 					title: 'Medium roast',
-					placeholder:
-						'Just a hint of roasty flavor beginning to come through',
+					text: 'Just a hint of roasty flavor beginning to come through',
 				},
 				{
 					title: 'Dark roast',
-					placeholder:
-						'Some oil on the bean with deep, caramelized smokiness',
+					text: 'Some oil on the bean with deep, caramelized smokiness',
 				},
 				{
 					title: 'I defer to you',
-					placeholder: `We'll make a pick based on your other responses`,
+					text: `We'll make a pick based on your other responses`,
 				},
 			],
 		},
@@ -153,19 +151,19 @@ export default function Quiz() {
 			options: [
 				{
 					title: 'Classic and traditional',
-					placeholder: `I like coffee that tastes like coffee`,
+					text: `I like coffee that tastes like coffee`,
 				},
 				{
 					title: 'Suprising and unconventional',
-					placeholder: 'Take me on an adventure',
+					text: 'Take me on an adventure',
 				},
 				{
 					title: 'I defer to you',
-					placeholder: `We'll make a pick based on your other responses`,
+					text: `We'll make a pick based on your other responses`,
 				},
 				{
 					title: 'I defer to you',
-					placeholder: `We'll make a pick based on your other responses`,
+					text: `We'll make a pick based on your other responses`,
 				},
 			],
 		},
@@ -196,50 +194,82 @@ export default function Quiz() {
 			options: [
 				{
 					title: '1 bag every week',
-					placeholder:
-						'$18 per shipment. Includes free priority shipping.',
+					text: '$18 per shipment. Includes free priority shipping.',
 					price: 72,
 				},
 				{
 					title: '1 bag every 2 weeks',
-					placeholder: '$20 per shipment. Includes free shipping.',
+					text: '$20 per shipment. Includes free shipping.',
 					price: 40,
 				},
 				{
 					title: '2 bags every week',
-					placeholder:
-						'$32 per shipment. Includes free first-class shipping.',
+					text: '$32 per shipment. Includes free first-class shipping.',
 					price: 128,
 				},
 			],
 		},
 	];
 	const [step, setStep] = useState(0);
-	// const [price, SetPrice] = useState(0);
-
-	const toggleStep = (index) => {
-		setStep(index);
+	const [showOrder, setShowOrder] = useState(false);
+	const [price, setPrice] = useState(0);
+	const [info, setInfo] = useState([]);
+	const handleStep = (index) => {
+		if (index >= 6) {
+			setShowOrder(true);
+		} else {
+			setStep(index + 1);
+		}
+	};
+	const handlePrice = (value) => {
+		setPrice(value);
+	};
+	const handleInfo = (target) => {
+		console.log(info);
+		setInfo((prev) => [...prev, target]);
+	};
+	let name = `${info[6]} of ${info[5]}, ${info[3]} for ${info[0]}`;
+	let random = Math.floor(Math.random() * (999 - 1 + 1)) + 1;
+	const addCartHandler = () => {
+		addToCart(random, name, price);
 	};
 
 	return (
 		<div>
-			<h2> {data[step].question}</h2>
-			<h3> {data[step].step}</h3>
-			<div>
-				{data[step].options.map((d) => {
-					return (
-						<div role="button" onClick={() => toggleStep(step + 1)}>
-							{console.log(d)}
-							{d.image ? (
-								<img src={d.image} alt={d.title} />
-							) : (
-								<p>{d.placeholder}</p>
-							)}
-							<p>{d.title}</p>
-						</div>
-					);
-				})}
-			</div>
+			{showOrder ? (
+				<div>
+					<h2>Perfect choice </h2>
+					<p>{name}</p>
+					<button onClick={addCartHandler}>
+						Add to basket {price}
+					</button>
+				</div>
+			) : (
+				<div>
+					<p> {data[step].step}</p>
+					<h2> {data[step].question}</h2>
+					<div>
+						{data[step].options.map((d, i) => {
+							return (
+								<>
+									<div
+										role="button"
+										key={i}
+										onClick={() => {
+											handleStep(step);
+											handlePrice(d.price);
+											handleInfo(d.title);
+										}}>
+										<p>{d.title}</p>
+										{d.image && <img src={d.image} alt={d.title} />}
+										{d.text && <p>{d.text}</p>}
+									</div>
+								</>
+							);
+						})}
+					</div>
+				</div>
+			)}
 		</div>
 	);
 }
