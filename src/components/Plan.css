@@ -8,3 +8,21 @@
 	margin: 1rem 0;
 	margin-bottom: 6rem;
 }
+.plan-quiz {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 1rem 3rem;
+}
+.plan-text {
+	font-size: 1.25rem;
+}
+.plan-quiz .btn {
+	margin-top: 1.25rem;
+}
+@media (min-width: 640px) {
+	.plan-quiz {
+		align-items: flex-start;
+	}
+}

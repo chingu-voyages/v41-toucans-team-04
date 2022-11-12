@@ -66,6 +66,7 @@
 	font-weight: 700;
 }
 .order-summary .btn {
+	margin-top: 1rem;
 	width: 18rem;
 }
 @media (min-width: 640px) {
