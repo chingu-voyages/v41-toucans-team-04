@@ -38,14 +38,30 @@
 	margin-right: 1rem;
 }
 .nav-link {
+	position: relative;
 	color: var(--main-grey);
 	list-style: none;
 	font-size: 1rem;
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	padding: 0.75rem;
+	padding: 1rem 0.5rem;
 	cursor: pointer;
+	overflow: hidden;
+}
+.nav-link::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	background: var(--main-bg);
+	transform: translateY(3px);
+	transition: transform 0.2s ease;
+}
+.nav-link:hover::after {
+	transform: translateY(0);
 }
 .nav-link:hover {
 	color: var(--main-bg);
@@ -58,6 +74,8 @@
 	font-size: 1.25rem;
 	width: 1.75rem;
 	height: 1.75rem;
+	margin-left: 0.25rem;
+	padding-bottom: 0.25rem;
 	z-index: 99;
 	border-radius: 100%;
 	cursor: pointer;
@@ -66,6 +84,7 @@
 .cart-icon-mobile:hover {
 	color: var(--main-bg);
 	background-color: var(--main-orange);
+	scale: 1.05;
 }
 .cart-icon-mobile {
 	display: none;

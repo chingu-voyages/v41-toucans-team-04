@@ -14,10 +14,10 @@ export default function Header({ setOpen }) {
 	return (
 		<header id="header" className="header">
 			<nav id="nav" className="nav container">
-				<div className="nav-logo">
+				<Link to="/" className="nav-logo">
 					<img src={toucan} className="nav-img" alt="toucan logo" />
 					<h2 className="nav-title">Toucan Coffee</h2>
-				</div>
+				</Link>
 				<ul className="nav-menu">
 					<Link to="/">
 						<li className="nav-link">Home</li>
