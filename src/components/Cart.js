@@ -4,24 +4,15 @@ export default function Cart(props) {
 	const closeCart = () => {
 		props.setOpen(false);
 	};
-	// const openCart = () => {
-	// 	props.setOpen(true);
-	// };
-
 	return (
 		<>
-			{/* {!props.open && (
-        <div className="cartIcon" onClick={openCart}>
-          <span class="material-icons">shopping_cart</span>
-        </div>
-      )} */}
 			{props.open && (
 				<>
 					<div className="backGround"></div>
 					<div className="cart">
 						<header>
 							<div>Shoping Cart</div>
-							<span class="material-icons" onClick={closeCart}>
+							<span className="material-icons" onClick={closeCart}>
 								close
 							</span>
 						</header>

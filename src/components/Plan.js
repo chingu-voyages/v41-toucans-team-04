@@ -25,8 +25,8 @@ const Plan = (props) => {
 						autoPlay
 						loop
 						muted
-						webkit-playsinline
-						playsinline
+						webkit-playsinline="true"
+						playsInline
 						className="hero-video"></video>
 					<div className="hero-overlay"></div>
 				</div>
