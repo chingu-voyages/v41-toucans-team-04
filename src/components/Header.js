@@ -34,7 +34,7 @@ export default function Header({ setOpen }) {
 					<Link to="/plan">
 						<li className="nav-link">Plans</li>
 					</Link>
-					<div className="cartIcon" onClick={openCart}>
+					<div className="cart-icon" onClick={openCart}>
 						<BsBag />
 					</div>
 				</ul>
@@ -67,8 +67,19 @@ export default function Header({ setOpen }) {
 						</Link>
 					</ul>
 				)}
-				<div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
-					<Hamburger size={24} toggled={isOpen} toggle={setIsOpen} />
+				<div className="nav-mobile">
+					<div className="cart-icon-mobile" onClick={openCart}>
+						<BsBag />
+					</div>
+					<div
+						className="hamburger"
+						onClick={() => setIsOpen(!isOpen)}>
+						<Hamburger
+							size={24}
+							toggled={isOpen}
+							toggle={setIsOpen}
+						/>
+					</div>
 				</div>
 			</nav>
 		</header>
