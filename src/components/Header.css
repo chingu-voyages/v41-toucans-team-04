@@ -74,6 +74,7 @@
 	font-size: 1.25rem;
 	width: 1.75rem;
 	height: 1.75rem;
+	color: var(--main-black);
 	margin-left: 0.25rem;
 	padding-bottom: 0.25rem;
 	z-index: 99;
