@@ -1,4 +1,5 @@
 import './Cart.css';
+import { MdClose } from 'react-icons/md';
 
 export default function Cart(props) {
 	const closeCart = () => {
@@ -12,8 +13,8 @@ export default function Cart(props) {
 					<div className="cart">
 						<header>
 							<div>Shopping Cart</div>
-							<span className="material-icons" onClick={closeCart}>
-								close
+							<span className="close-icon" onClick={closeCart}>
+								<MdClose />
 							</span>
 						</header>
 						{props.cart.length === 0 && (

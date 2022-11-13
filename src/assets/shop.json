@@ -3,7 +3,7 @@
 		{
 			"key": 1,
 			"name": "Canvas tote bag",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints.",
 			"img": "../images/merch/tote-bag.png",
 			"price": "20.99"
 		},
@@ -31,7 +31,7 @@
 		{
 			"key": 5,
 			"name": "Coasters",
-			"description": "Set of six 10 cm absorbant drink coasters to hold your favorite beverage (like our coffee). ",
+			"description": "Set of six 10 cm absorbant drink coasters to hold your favorite beverage (like our coffee).",
 			"img": "../images/merch/coasters.png",
 			"price": "15.99"
 		},
@@ -46,81 +46,81 @@
 	"coffee": [
 		{
 			"name": "Novo Coffee",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"description": "Sweet & Tart .Sugary sweetness that reminds us of malt syrup combines bright lemon-lime acidity and juicy green apple notes.",
 			"img": "../images/shop/image-coffee-1.png",
-			"price": "19.99"
+			"price": "19.50"
 		},
 		{
-			"name": "Saints",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"name": "Saints Coffee Roasters",
+			"description": "Balanced & Fruity. Fruity and sweet, with a juicy note of cherry bolstered by a deep, nutty sweetness.",
 			"img": "../images/shop/image-coffee-2.png",
-			"price": "20.99"
+			"price": "21.50"
 		},
 		{
-			"name": "Coffee",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
-			"img": "../images/shop/image-coffee-3.jpg",
-			"price": "20.99"
+			"name": "Drink Coffee Do Stuff",
+			"description": "Comforting & Rich Silky. This coffee/'s chocolaty-vanilla structure and kiss of roast make it something to howl about",
+			"img": "../images/shop/image-coffee-3.png",
+			"price": "22.00"
 		},
 		{
 			"name": "Atomic Coffee Roasters",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"description": "Comforting & Rich. Nutty and cherry notes complement deep cedar tones make a deliciously light cup brewed hot or cold.",
 			"img": "../images/shop/image-coffee-4.png",
-			"price": "20.99"
+			"price": "20.00"
 		},
 		{
-			"name": "Coffee",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"name": "Steady State Coffee",
+			"description": "Subtle & Delicate. A rich and buttery pastry crust sort of sweetness in addition to notes of orange marmalade and fresh flowers.",
 			"img": "../images/shop/image-coffee-5.png",
-			"price": "20.99"
+			"price": "24.90"
 		},
 		{
 			"name": "Portrait Coffee",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"description": "Balanced & Fruity. Chocolaty sweetness shines up front but yields to a soft yet complexly fruity acidity as it cools.",
 			"img": "../images/shop/image-coffee-6.png",
-			"price": "21.99"
+			"price": "24.50"
 		},
 		{
 			"name": "Methodical Coffee",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"description": "Comforting & Rich. A smooth, rich body and deep chocolaty sweetness envelop notes of roasted walnut and hints of clove.",
 			"img": "../images/shop/image-coffee-7.png",
 			"price": "19.99"
 		},
 		{
 			"name": "Feast",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"description": "Balanced & Fruity. Sweet balance found in soft citrus acidity and toffee sweetness. So smooth and poetic, we had to write a haiku.",
 			"img": "../images/shop/image-coffee-8.png",
-			"price": "20.99"
+			"price": "18.50"
 		},
 		{
 			"name": "Sterling Coffee roasters",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"description": "Roasty & Smoky. Dark chocolaty sweetness and kiss of roastiness pair beautifully with your milk of choice makes it just as delicious black.",
 			"img": "../images/shop/image-coffee-9.png",
-			"price": "20.99"
+			"price": "21.50"
 		},
 		{
-			"name": "Cartel Coffee",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
-			"img": "../images/shop/image-coffee-10.jpg",
-			"price": "20.99"
+			"name": "Panther Coffee",
+			"description": "Sweet & Inviting. Rich cocoa notes and a creamy body are complemented by hints of plum and a lingering brown sugar sweetness.",
+			"img": "../images/shop/image-coffee-10.png",
+			"price": "20.00"
 		},
 		{
-			"name": "Steady State Coffee",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"name": "Common Voice Trade",
+			"description": "Sweet & Smooth. Chocolate and almond butter sweetness for days - this cup offers that classic candy bar profile, with a hint of tangerine acidity.",
 			"img": "../images/shop/image-coffee-11.png",
-			"price": "18.99"
+			"price": "18.00"
 		},
 		{
 			"name": "Portrait Coffee",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"description": "Sweet & Smooth. A chocolaty sweetness shines throughout this coffee, with a hints of fruit adding complexity and a big, sticky body bringing it all together.",
 			"img": "../images/shop/image-coffee-12.png",
-			"price": "20.99"
+			"price": "20.50"
 		},
 		{
 			"name": "Funky Chicken Red Rooster Coffee",
-			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"description": "Sweet & Smooth. Don't be surprised if you flap your arms and your feet start kickin' - this balanced blend brings together an earthy sweetness with a bright plum acidity. ",
 			"img": "../images/shop/image-coffee-13.png",
-			"price": "20.99"
+			"price": "23.50"
 		}
 	]
 }

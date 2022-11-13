@@ -1,4 +1,4 @@
-export default function MerchCard({ data, id, addToCart }) {
+export default function ShopCard({ data, id, addToCart }) {
 	const addCartHandler = () => {
 		addToCart(id, data.name, data.price);
 	};

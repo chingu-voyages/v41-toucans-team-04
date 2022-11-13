@@ -25,7 +25,7 @@
 	font-size: 1.5em;
 	font-weight: 600;
 }
-.cart header .material-icons {
+.cart header .close-icon {
 	position: absolute;
 	top: 50%;
 	right: 20px;
@@ -76,5 +76,16 @@
 @media (max-width: 768px) {
 	.cart {
 		width: 100vw;
+	}
+	.cartList li .cartItemName {
+		font-size: 1.1rem;
+		flex-basis: 55%;
+	}
+	.cartList li .cartItemPrice {
+		font-size: 1rem;
+	}
+	.cartList li .btnRemove {
+		width: 70px;
+		height: 35px;
 	}
 }
