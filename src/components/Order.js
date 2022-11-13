@@ -28,7 +28,7 @@ export default function Quiz({ addToCart }) {
 	};
 
 	return (
-		<div className="order-container container">
+		<div className="order-container">
 			{showSummary ? (
 				<div className="order-summary">
 					<h2 className="order-title">Perfect choice!</h2>
