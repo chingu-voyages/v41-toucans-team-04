@@ -8,7 +8,7 @@
 .order-step,
 .order-header {
 	font-size: 1.5rem;
-	font-weight: 600;
+	font-weight: 700;
 	padding: 1rem;
 	text-align: left;
 }
@@ -40,7 +40,7 @@
 }
 .order-title {
 	font-size: 2rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 .order-text {
 	margin-top: 1rem;

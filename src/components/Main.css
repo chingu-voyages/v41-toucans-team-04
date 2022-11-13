@@ -244,8 +244,8 @@ p {
 	background-color: var(--main-bg);
 }
 .features-card img {
-	width: 64px;
-	height: auto;
+	/* width: 64px;
+	height: auto; */
 	align-self: center;
 	justify-self: center;
 	padding: 1rem 0;
@@ -341,7 +341,7 @@ p {
 }
 .info-item-no {
 	font-family: 'Inter Tight', sans-serif;
-	font-weight: 800;
+	font-weight: 700;
 }
 .info-item {
 	display: flex;

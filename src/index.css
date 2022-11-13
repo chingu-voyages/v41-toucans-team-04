@@ -1,19 +1,32 @@
 @font-face {
 	font-family: 'Atkinson Hyperlegible';
-	src: url('./fonts/Atkinson-Hyperlegible-Regular-102.ttf')
-		format('truetype');
 	font-weight: 400;
+	src: local('Atkinson Hyperlegible'), local('AtkinsonHyperlegible'),
+		url('./fonts/Atkinson-Hyperlegible-Regular-102.ttf')
+			format('truetype');
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Atkinson Hyperlegible';
-	src: url('./fonts/Atkinson-Hyperlegible-Bold-102.ttf')
-		format('truetype');
 	font-weight: 700;
+	src: local('Atkinson Hyperlegible'), local('AtkinsonHyperlegible'),
+		url('./fonts/Atkinson-Hyperlegible-Bold-102.ttf')
+			format('truetype');
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Inter Tight';
-	src: url('./fonts/InterTight-Bold.ttf') format('truetype');
 	font-weight: 700;
+	src: local('Inter Tight'), local('InterTight'),
+		url('./fonts/InterTight-Bold.ttf') format('truetype');
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Inter Tight';
+	font-weight: 400;
+	src: local('Inter Tight'), local('InterTight'),
+		url('./fonts/InterTight-Regular.ttf') format('truetype');
+	font-display: swap;
 }
 :root {
 	--main-bg: #0e8784;

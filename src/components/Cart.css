@@ -23,7 +23,7 @@
 	position: relative;
 	padding: 2rem;
 	font-size: 1.5em;
-	font-weight: 600;
+	font-weight: 700;
 }
 .cart header .close-icon {
 	position: absolute;
@@ -49,7 +49,7 @@
 .cartList li .cartItemName {
 	flex-basis: 50%;
 	font-size: 1.3rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 .cartList li .cartItemPrice {
 	font-size: 1.1rem;
