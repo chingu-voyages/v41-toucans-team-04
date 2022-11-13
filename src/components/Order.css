@@ -35,9 +35,6 @@
 	border-radius: 8px;
 	cursor: pointer;
 }
-.order-item:hover {
-	background-color: var(--main-pink);
-}
 .order-para {
 	padding: 2rem 0;
 }

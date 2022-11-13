@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Main from './components/Main';
-import Merchandise from './components/Merchandise';
+import Shop from './components/Shop';
 import Menu from './components/Menu';
 import About from './components/About';
 import Plan from './components/Plan';
@@ -57,7 +57,7 @@ export default function App() {
 					/>
 					<Route
 						path="/shop"
-						element={<Merchandise addToCart={addToCart} />}
+						element={<Shop addToCart={addToCart} />}
 					/>
 					{/* Components not made yet */}
 

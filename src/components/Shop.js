@@ -1,12 +1,12 @@
 import React from 'react';
-import './Merchandise.css';
+import './Shop.css';
 import { useEffect, useState } from 'react';
 import data from '../assets/merch-items.json';
 import video from '../assets/videos/video-coffee-cheers.mp4';
 import poster from '../assets/images/image-coffee-shop.jpg';
-import MerchCard from './MerchCard';
+import ShopCard from './ShopCard';
 
-export default function Merchandise(props) {
+export default function Shop(props) {
 	const [products, setProducts] = useState(data.merch);
 
 	useEffect(() => {
@@ -42,7 +42,7 @@ export default function Merchandise(props) {
 				<div className="merch-container container">
 					{products.map((item, idx) => {
 						return (
-							<MerchCard
+							<ShopCard
 								data={item}
 								key={idx}
 								id={idx}
