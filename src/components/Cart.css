@@ -55,12 +55,11 @@
 	font-size: 1.1rem;
 }
 .cartList li .btnRemove {
-	width: 100px;
+	width: 90px;
 	height: 40px;
 	color: #fff;
 	border: 2px solid var(--main-bg);
-	transition: width 0.7s;
-	border-radius: 50px;
+	border-radius: 8px;
 	background-color: var(--main-bg);
 }
 .empty {

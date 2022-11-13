@@ -54,6 +54,28 @@ p.hero-text {
 	max-width: 300px;
 	overflow-x: hidden;
 }
+
+.tab-menu {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 2rem auto 3em;
+}
+.tab {
+	/* width: 30%; */
+	flex: 1;
+	padding: 1rem 2rem;
+	font-family: 'Inter Tight';
+	font-size: 1.5rem;
+	font-weight: 700;
+	border: 3px solid var(--main-bg);
+	text-align: center;
+	cursor: pointer;
+}
+.tab-menu .active {
+	color: var(--main-white);
+	background-color: var(--main-bg);
+}
 /*---MEDIA QUERIES---*/
 @media (min-width: 768px) {
 	.merch-container {
@@ -62,5 +84,14 @@ p.hero-text {
 		justify-content: space-between;
 		gap: 3rem;
 		padding: 0 3rem;
+	}
+}
+
+@media (min-width: 1280px) {
+	.tab-menu {
+		gap: 1.5rem;
+	}
+	.tab {
+		border-radius: 8px;
 	}
 }

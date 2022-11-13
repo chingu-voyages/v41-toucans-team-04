@@ -1,0 +1,126 @@
+{
+	"merch": [
+		{
+			"key": 1,
+			"name": "Canvas tote bag",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/merch/tote-bag.png",
+			"price": "20.99"
+		},
+		{
+			"key": 2,
+			"name": "Coffee tumbler",
+			"description": "Perfectly sized 16oz coffee tumbler for when you're on the go. Insulated stainless steel with removable lid.",
+			"img": "../images/merch/tumbler.png",
+			"price": "17.99"
+		},
+		{
+			"key": 3,
+			"name": "Mug",
+			"description": "Terracotta mug to keep your cup of java piping hot. Handcrafted in Turkey. Available in different sizes and colors.",
+			"img": "../images/merch/mug.png",
+			"price": "22.99"
+		},
+		{
+			"key": 4,
+			"name": "Gift basket",
+			"description": "The perfect gift for your favorite coffee lover. Includes one bag of our premium roasted beans.",
+			"img": "../images/merch/giftbox1.png",
+			"price": "49.99"
+		},
+		{
+			"key": 5,
+			"name": "Coasters",
+			"description": "Set of six 10 cm absorbant drink coasters to hold your favorite beverage (like our coffee). ",
+			"img": "../images/merch/coasters.png",
+			"price": "15.99"
+		},
+		{
+			"key": 6,
+			"name": "Drip coffee jug",
+			"description": "Pour over coffee maker with a reusable stainless steel coffee filter. Perfect for home, travel or outdoor.",
+			"img": "../images/merch/pour-over.png",
+			"price": "14.99"
+		}
+	],
+	"coffee": [
+		{
+			"name": "Novo Coffee",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-1.png",
+			"price": "19.99"
+		},
+		{
+			"name": "Saints",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-2.png",
+			"price": "20.99"
+		},
+		{
+			"name": "Coffee",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-3.jpg",
+			"price": "20.99"
+		},
+		{
+			"name": "Atomic Coffee Roasters",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-4.png",
+			"price": "20.99"
+		},
+		{
+			"name": "Coffee",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-5.png",
+			"price": "20.99"
+		},
+		{
+			"name": "Portrait Coffee",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-6.png",
+			"price": "21.99"
+		},
+		{
+			"name": "Methodical Coffee",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-7.png",
+			"price": "19.99"
+		},
+		{
+			"name": "Feast",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-8.png",
+			"price": "20.99"
+		},
+		{
+			"name": "Sterling Coffee roasters",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-9.png",
+			"price": "20.99"
+		},
+		{
+			"name": "Cartel Coffee",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-10.jpg",
+			"price": "20.99"
+		},
+		{
+			"name": "Steady State Coffee",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-11.png",
+			"price": "18.99"
+		},
+		{
+			"name": "Portrait Coffee",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-12.png",
+			"price": "20.99"
+		},
+		{
+			"name": "Funky Chicken Red Rooster Coffee",
+			"description": "Lightweight tote bag with inner pockets. Made from 100% recycled canvas. One size only (12\"), available in various prints. ",
+			"img": "../images/shop/image-coffee-13.png",
+			"price": "20.99"
+		}
+	]
+}
