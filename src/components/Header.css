@@ -49,6 +49,20 @@
 	cursor: pointer;
 	overflow: hidden;
 }
+.active-link {
+	color: var(--main-bg);
+	position: relative;
+}
+.active-link::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	background: var(--main-bg);
+	transform: translateY(0);
+}
 .nav-link::after {
 	content: '';
 	position: absolute;
@@ -60,6 +74,7 @@
 	transform: translateY(3px);
 	transition: transform 0.2s ease;
 }
+
 .nav-link:hover::after {
 	transform: translateY(0);
 }

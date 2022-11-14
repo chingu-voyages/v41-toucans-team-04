@@ -78,6 +78,7 @@ p.hero-text {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		align-items: flex-start;
 		gap: 3rem;
 		padding: 0 3rem;
 	}

@@ -6,6 +6,7 @@ import toucan from '../assets/images/toucan-logo.png';
 import { BsBag } from 'react-icons/bs';
 export default function Header({ setOpen }) {
 	const [isOpen, setIsOpen] = useState(false);
+	const [isActive, setActive] = useState('home');
 	const closeMenu = () => setIsOpen(false);
 
 	const openCart = () => {
@@ -20,19 +21,62 @@ export default function Header({ setOpen }) {
 				</Link>
 				<ul className="nav-menu">
 					<Link to="/">
-						<li className="nav-link">Home</li>
+						<li
+							className={
+								isActive === 'home'
+									? 'nav-link active-link'
+									: 'nav-link'
+							}
+							onClick={() => setActive('home')}>
+							Home
+						</li>
 					</Link>
 					<Link to="/about">
-						<li className="nav-link">About</li>
+						<li
+							className={
+								isActive === 'about'
+									? 'nav-link active-link'
+									: 'nav-link'
+							}
+							onClick={() => setActive('about')}>
+							About
+						</li>
 					</Link>
 					<Link to="/menu">
-						<li className="nav-link">Menu</li>
+						<li
+							data-link="menu"
+							className={
+								isActive === 'menu'
+									? 'nav-link active-link'
+									: 'nav-link'
+							}
+							onClick={() => setActive('menu')}>
+							Menu
+						</li>
 					</Link>
 					<Link to="/shop">
-						<li className="nav-link">Shop</li>
+						<li
+							data-link="shop"
+							className={
+								isActive === 'shop'
+									? 'nav-link active-link'
+									: 'nav-link'
+							}
+							onClick={() => setActive('shop')}>
+							Shop
+						</li>
 					</Link>
 					<Link to="/plan">
-						<li className="nav-link">Plans</li>
+						<li
+							data-link="plan"
+							className={
+								isActive === 'plan'
+									? 'nav-link active-link'
+									: 'nav-link'
+							}
+							onClick={() => setActive('plan')}>
+							Plan
+						</li>
 					</Link>
 					<div className="cart-icon" onClick={openCart}>
 						<BsBag />
@@ -62,7 +106,7 @@ export default function Header({ setOpen }) {
 						</Link>
 						<Link to="/plan">
 							<li className="nav-link-mobile" onClick={closeMenu}>
-								Plans
+								Plan
 							</li>
 						</Link>
 					</ul>
