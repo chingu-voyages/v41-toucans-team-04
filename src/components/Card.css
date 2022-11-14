@@ -28,7 +28,6 @@ li {
 	margin-bottom: 20px;
 	background: var(--main-pink);
 	border-radius: 10px;
-	border: 1px solid #fae6da;
 }
 .card .image img {
 	width: 100%;
@@ -60,14 +59,14 @@ li {
 }
 .card .price {
 	margin-bottom: 20px;
-	font-size: 0.8rem;
+	font-size: 1rem;
 	font-weight: 600;
 }
 .card-btn {
 	width: 100px;
 	height: 40px;
 	font-weight: 600;
-	color: #fff;
+	color: var(--main-white);
 	border: 2px solid var(--main-bg);
 	transition: width 0.7s;
 	border-radius: 8px;
