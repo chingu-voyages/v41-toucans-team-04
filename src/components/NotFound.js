@@ -4,14 +4,15 @@ const NotFound = () => {
 	return (
 		<section className="not-found container">
 			<div className="not-found-container ">
-				<h1 className="hero-title">Oooppss...</h1>
+				<h2 className="hero-title">Oooppss...</h2>
 				<img
 					src={spilling}
 					alt="spilled coffee"
 					width="256px"
 					height="225px"
 				/>
-				<h2 className="hero-text">That page cannot be found.</h2>
+				<h1 className="hero-title">404</h1>
+				<h3 className="hero-text">That page cannot be found.</h3>
 			</div>
 		</section>
 	);
