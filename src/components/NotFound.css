@@ -1,0 +1,12 @@
+.not-found {
+	height: 72vh;
+	width: 100vw;
+}
+.not-found-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	margin: 3rem 0;
+}
