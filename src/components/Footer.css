@@ -34,10 +34,10 @@
 .footer .nav-link:hover {
 	color: var(--main-orange);
 }
-.footer .nav-link.active-link {
+.footer .nav-link.active {
 	color: var(--main-orange);
 }
-.footer .nav-link.active-link::before {
+.footer .nav-link.active::before {
 	background: var(--main-orange);
 }
 .footer-social-menu {

@@ -1,5 +1,5 @@
 import './Footer.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import toucan from '../assets/images/toucan-logo.png';
 import facebook from '../assets/icons/icon-facebook.svg';
 import instagram from '../assets/icons/icon-instagram.svg';
@@ -18,63 +18,23 @@ export default function Footer({ setActive, isActive }) {
 							/>
 							<h2 className="nav-title">Toucan Coffee</h2>
 						</div>
-						<ul className="footer-menu">
-							<Link to="/">
-								<li
-									className={
-										isActive === 'home'
-											? 'nav-link active-link'
-											: 'nav-link'
-									}
-									onClick={() => setActive('home')}>
-									Home
-								</li>
-							</Link>
-							<Link to="/about">
-								<li
-									className={
-										isActive === 'about'
-											? 'nav-link active-link'
-											: 'nav-link'
-									}
-									onClick={() => setActive('about')}>
-									About
-								</li>
-							</Link>
-							<Link to="/menu">
-								<li
-									className={
-										isActive === 'menu'
-											? 'nav-link active-link'
-											: 'nav-link'
-									}
-									onClick={() => setActive('menu')}>
-									Menu
-								</li>
-							</Link>
-							<Link to="/shop">
-								<li
-									className={
-										isActive === 'shop'
-											? 'nav-link active-link'
-											: 'nav-link'
-									}
-									onClick={() => setActive('shop')}>
-									Shop
-								</li>
-							</Link>
-							<Link to="/plan">
-								<li
-									className={
-										isActive === 'plan'
-											? 'nav-link active-link'
-											: 'nav-link'
-									}
-									onClick={() => setActive('plan')}>
-									Plan
-								</li>
-							</Link>
-						</ul>
+						<div className="footer-menu">
+							<NavLink to="/" className="nav-link" end>
+								Home
+							</NavLink>
+							<NavLink to="/about" className="nav-link">
+								About
+							</NavLink>
+							<NavLink to="/menu" className="nav-link">
+								Menu
+							</NavLink>
+							<NavLink to="/shop" className="nav-link">
+								Shop
+							</NavLink>
+							<NavLink to="/plan" className="nav-link">
+								Plan
+							</NavLink>
+						</div>
 					</div>
 					<ul className="footer-social-menu">
 						<li>

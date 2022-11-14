@@ -16,6 +16,9 @@
 	justify-content: center;
 	gap: 0.5rem;
 }
+.nav-logo.active::before {
+	height: 0;
+}
 .nav-img {
 	width: 2rem;
 	height: 2rem;
@@ -49,11 +52,11 @@
 	cursor: pointer;
 	overflow: hidden;
 }
-.active-link {
+.active {
 	color: var(--main-bg);
 	position: relative;
 }
-.active-link::before {
+.active::before {
 	content: '';
 	position: absolute;
 	width: 100%;

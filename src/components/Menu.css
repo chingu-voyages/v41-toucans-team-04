@@ -34,7 +34,7 @@
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
 }
-.tabMenu > div.active {
+.tabMenu > div.active-menu {
 	color: var(--main-white);
 	border-bottom: none;
 	background-color: var(--main-bg);
@@ -70,7 +70,7 @@
 	font-size: 2rem;
 	transition: all 0.25s ease-in-out;
 }
-.dropdownMenu .label .material-icons.active {
+.dropdownMenu .label .material-icons.active-menu {
 	transform: rotate(180deg);
 }
 .dropdownMenu .optionList {
@@ -83,7 +83,7 @@
 	background-color: rgba(254, 252, 247, 0.7490196078);
 	border-radius: 8px;
 }
-.dropdownMenu .optionList.active {
+.dropdownMenu .optionList.active-menu {
 	display: block;
 }
 .dropdownMenu .optionItem {

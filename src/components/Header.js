@@ -1,7 +1,7 @@
 import './Header.css';
 import { useState } from 'react';
 import Hamburger from 'hamburger-react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import toucan from '../assets/images/toucan-logo.png';
 import { BsBag } from 'react-icons/bs';
 export default function Header({ setOpen, setActive, isActive }) {
@@ -14,143 +14,64 @@ export default function Header({ setOpen, setActive, isActive }) {
 	return (
 		<header id="header" className="header">
 			<nav id="nav" className="nav container">
-				<Link to="/" className="nav-logo">
+				<NavLink to="/" end className="nav-logo">
 					<img src={toucan} className="nav-img" alt="toucan logo" />
 					<h2 className="nav-title">Toucan Coffee</h2>
-				</Link>
-				<ul className="nav-menu">
-					<Link to="/">
-						<li
-							className={
-								isActive === 'home'
-									? 'nav-link active-link'
-									: 'nav-link'
-							}
-							onClick={() => setActive('home')}>
-							Home
-						</li>
-					</Link>
-					<Link to="/about">
-						<li
-							className={
-								isActive === 'about'
-									? 'nav-link active-link'
-									: 'nav-link'
-							}
-							onClick={() => setActive('about')}>
-							About
-						</li>
-					</Link>
-					<Link to="/menu">
-						<li
-							className={
-								isActive === 'menu'
-									? 'nav-link active-link'
-									: 'nav-link'
-							}
-							onClick={() => setActive('menu')}>
-							Menu
-						</li>
-					</Link>
-					<Link to="/shop">
-						<li
-							className={
-								isActive === 'shop'
-									? 'nav-link active-link'
-									: 'nav-link'
-							}
-							onClick={() => setActive('shop')}>
-							Shop
-						</li>
-					</Link>
-					<Link to="/plan">
-						<li
-							className={
-								isActive === 'plan'
-									? 'nav-link active-link'
-									: 'nav-link'
-							}
-							onClick={() => setActive('plan')}>
-							Plan
-						</li>
-					</Link>
+				</NavLink>
+				<div className="nav-menu">
+					<NavLink to="/" end className="nav-link">
+						Home
+					</NavLink>
+					<NavLink to="/about" className="nav-link">
+						About
+					</NavLink>
+					<NavLink to="/menu" className="nav-link">
+						Menu
+					</NavLink>
+					<NavLink to="/shop" className="nav-link">
+						Shop
+					</NavLink>
+					<NavLink to="/plan" className="nav-link">
+						Plan
+					</NavLink>
 					<div className="cart-icon" onClick={openCart}>
 						<BsBag />
 					</div>
-				</ul>
+				</div>
 				{isOpen && (
-					<ul className="nav-menu-mobile">
-						<Link to="/">
+					<div className="nav-menu-mobile">
+						<NavLink
+							to="/"
+							className="nav-link-mobile"
+							onClick={() => closeMenu()}>
+							Home
+						</NavLink>
+						<NavLink
+							to="/about"
+							className="nav-link-mobile"
+							onClick={() => closeMenu()}>
+							About
+						</NavLink>
+						<NavLink to="/menu">
 							<li
-								className={
-									isActive === 'home'
-										? 'nav-link-mobile active-link'
-										: 'nav-link-mobile'
-								}
-								onClick={() => {
-									setActive('home');
-									closeMenu();
-								}}>
-								Home
-							</li>
-						</Link>
-						<Link to="/about">
-							<li
-								className={
-									isActive === 'about'
-										? 'nav-link-mobile active-link'
-										: 'nav-link-mobile'
-								}
-								onClick={() => {
-									setActive('about');
-									closeMenu();
-								}}>
-								About
-							</li>
-						</Link>
-						<Link to="/menu">
-							<li
-								className={
-									isActive === 'menu'
-										? 'nav-link-mobile active-link'
-										: 'nav-link-mobile'
-								}
-								onClick={() => {
-									setActive('menu');
-									closeMenu();
-								}}>
+								className="nav-link-mobile"
+								onClick={() => closeMenu()}>
 								Menu
 							</li>
-						</Link>
-						<Link to="/shop">
-							<li
-								className={
-									isActive === 'shop'
-										? 'nav-link-mobile active-link'
-										: 'nav-link-mobile'
-								}
-								onClick={() => {
-									setActive('shop');
-									closeMenu();
-								}}>
-								Shop
-							</li>
-						</Link>
-						<Link to="/plan">
-							<li
-								className={
-									isActive === 'plan'
-										? 'nav-link-mobile active-link'
-										: 'nav-link-mobile'
-								}
-								onClick={() => {
-									setActive('plan');
-									closeMenu();
-								}}>
-								Plan
-							</li>
-						</Link>
-					</ul>
+						</NavLink>
+						<NavLink
+							to="/shop"
+							className="nav-link-mobile"
+							onClick={() => closeMenu()}>
+							Shop
+						</NavLink>
+						<NavLink
+							to="/plan"
+							className="nav-link-mobile"
+							onClick={() => closeMenu()}>
+							Plan
+						</NavLink>
+					</div>
 				)}
 				<div className="nav-mobile">
 					<div className="cart-icon-mobile" onClick={openCart}>

@@ -76,7 +76,7 @@ export default function Menu(props) {
 				<div className="cards-container container">
 					<div className="tabMenu">
 						<div
-							className={toggleState === 1 ? 'active' : ''}
+							className={toggleState === 1 ? 'active-menu' : ''}
 							onClick={() => {
 								toggleStateHandler(1);
 								setCard(data.coffee);
@@ -84,7 +84,7 @@ export default function Menu(props) {
 							Coffee
 						</div>
 						<div
-							className={toggleState === 2 ? 'active' : ''}
+							className={toggleState === 2 ? 'active-menu' : ''}
 							onClick={() => {
 								toggleStateHandler(2);
 								setCard(data.nonCoffee);
@@ -92,7 +92,7 @@ export default function Menu(props) {
 							Non-Coffee
 						</div>
 						<div
-							className={toggleState === 3 ? 'active' : ''}
+							className={toggleState === 3 ? 'active-menu' : ''}
 							onClick={alertHandler}>
 							Food
 						</div>
@@ -103,7 +103,7 @@ export default function Menu(props) {
 							<span
 								className={
 									dropdown
-										? 'active material-icons'
+										? 'active-menu material-icons'
 										: 'material-icons'
 								}>
 								<MdKeyboardArrowDown />
@@ -111,7 +111,7 @@ export default function Menu(props) {
 						</button>
 						<ul
 							className={
-								dropdown ? 'active optionList' : 'optionList'
+								dropdown ? 'active-menu optionList' : 'optionList'
 							}>
 							<li
 								className="optionItem"
