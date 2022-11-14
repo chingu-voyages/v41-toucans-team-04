@@ -34,7 +34,7 @@ p.hero-text {
 	align-items: center;
 	background-color: var(--main-pink);
 	border: 1px solid #fae6da;
-	border-radius: 25px;
+	border-radius: 8px;
 }
 /*---DESCRIPTION--- */
 .merch p {

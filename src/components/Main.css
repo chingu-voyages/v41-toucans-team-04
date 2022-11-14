@@ -31,7 +31,7 @@ p {
 }
 .btn:hover {
 	opacity: 0.75;
-	color: var(--main-pink);
+	color: var(--main-orange);
 }
 /* container */
 @media (min-width: 1280px) {

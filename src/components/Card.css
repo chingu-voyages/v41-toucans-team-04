@@ -28,6 +28,7 @@ li {
 	margin-bottom: 20px;
 	background: var(--main-pink);
 	border-radius: 10px;
+	border: 1px solid #fae6da;
 }
 .card .image img {
 	width: 100%;

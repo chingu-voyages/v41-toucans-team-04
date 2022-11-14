@@ -57,10 +57,16 @@
 .cartList li .btnRemove {
 	width: 90px;
 	height: 40px;
-	color: #fff;
+	color: var(--main-white);
+	font-weight: 700;
 	border: 2px solid var(--main-bg);
 	border-radius: 8px;
 	background-color: var(--main-bg);
+}
+.cartList li .btnRemove:hover {
+	opacity: 0.75;
+	color: var(--main-orange);
+	cursor: pointer;
 }
 .empty {
 	position: absolute;
