@@ -26,14 +26,19 @@
 .footer .nav-link {
 	color: var(--main-white);
 	font-size: 0.75rem;
-	padding: 0.75rem 0.25rem;
+	padding: 0.75rem 0.5rem;
 }
 .footer .nav-link::after {
 	background: var(--main-orange);
-	height: 2px;
 }
 .footer .nav-link:hover {
 	color: var(--main-orange);
+}
+.footer .nav-link.active-link {
+	color: var(--main-orange);
+}
+.footer .nav-link.active-link::before {
+	background: var(--main-orange);
 }
 .footer-social-menu {
 	display: flex;

@@ -4,9 +4,8 @@ import Hamburger from 'hamburger-react';
 import { Link } from 'react-router-dom';
 import toucan from '../assets/images/toucan-logo.png';
 import { BsBag } from 'react-icons/bs';
-export default function Header({ setOpen }) {
+export default function Header({ setOpen, setActive, isActive }) {
 	const [isOpen, setIsOpen] = useState(false);
-	const [isActive, setActive] = useState('home');
 	const closeMenu = () => setIsOpen(false);
 
 	const openCart = () => {
@@ -44,7 +43,6 @@ export default function Header({ setOpen }) {
 					</Link>
 					<Link to="/menu">
 						<li
-							data-link="menu"
 							className={
 								isActive === 'menu'
 									? 'nav-link active-link'
@@ -56,7 +54,6 @@ export default function Header({ setOpen }) {
 					</Link>
 					<Link to="/shop">
 						<li
-							data-link="shop"
 							className={
 								isActive === 'shop'
 									? 'nav-link active-link'
@@ -68,7 +65,6 @@ export default function Header({ setOpen }) {
 					</Link>
 					<Link to="/plan">
 						<li
-							data-link="plan"
 							className={
 								isActive === 'plan'
 									? 'nav-link active-link'
@@ -85,27 +81,72 @@ export default function Header({ setOpen }) {
 				{isOpen && (
 					<ul className="nav-menu-mobile">
 						<Link to="/">
-							<li className="nav-link-mobile" onClick={closeMenu}>
+							<li
+								className={
+									isActive === 'home'
+										? 'nav-link-mobile active-link'
+										: 'nav-link-mobile'
+								}
+								onClick={() => {
+									setActive('home');
+									closeMenu();
+								}}>
 								Home
 							</li>
 						</Link>
 						<Link to="/about">
-							<li className="nav-link-mobile" onClick={closeMenu}>
+							<li
+								className={
+									isActive === 'about'
+										? 'nav-link-mobile active-link'
+										: 'nav-link-mobile'
+								}
+								onClick={() => {
+									setActive('about');
+									closeMenu();
+								}}>
 								About
 							</li>
 						</Link>
 						<Link to="/menu">
-							<li className="nav-link-mobile" onClick={closeMenu}>
+							<li
+								className={
+									isActive === 'menu'
+										? 'nav-link-mobile active-link'
+										: 'nav-link-mobile'
+								}
+								onClick={() => {
+									setActive('menu');
+									closeMenu();
+								}}>
 								Menu
 							</li>
 						</Link>
 						<Link to="/shop">
-							<li className="nav-link-mobile" onClick={closeMenu}>
+							<li
+								className={
+									isActive === 'shop'
+										? 'nav-link-mobile active-link'
+										: 'nav-link-mobile'
+								}
+								onClick={() => {
+									setActive('shop');
+									closeMenu();
+								}}>
 								Shop
 							</li>
 						</Link>
 						<Link to="/plan">
-							<li className="nav-link-mobile" onClick={closeMenu}>
+							<li
+								className={
+									isActive === 'plan'
+										? 'nav-link-mobile active-link'
+										: 'nav-link-mobile'
+								}
+								onClick={() => {
+									setActive('plan');
+									closeMenu();
+								}}>
 								Plan
 							</li>
 						</Link>

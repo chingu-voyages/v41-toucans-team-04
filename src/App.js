@@ -17,6 +17,7 @@ import { useState } from 'react';
 export default function App() {
 	const [open, setOpen] = useState(false);
 	const [cart, setCart] = useState([]);
+	const [isActive, setActive] = useState('home');
 
 	const addToCart = (id, name, price) => {
 		const newItem = {
@@ -37,7 +38,11 @@ export default function App() {
 	return (
 		<div className="App">
 			<Router>
-				<Header setOpen={setOpen} />
+				<Header
+					setOpen={setOpen}
+					setActive={setActive}
+					isActive={isActive}
+				/>
 				<Cart
 					removeFromCart={removeFromCart}
 					cart={cart}
@@ -65,7 +70,7 @@ export default function App() {
 
 					{/* Wildcard - if a route is entered in URL with no set path, it will redirect to Main */}
 				</Routes>
-				<Footer />
+				<Footer setActive={setActive} isActive={isActive} />
 			</Router>
 		</div>
 	);
