@@ -88,7 +88,7 @@
 }
 .dropdownMenu .optionItem {
 	padding: 1rem 2rem;
-	background: #f4f1eb;
+	background: var(--main-pink);
 	border-radius: 8px;
 }
 .dropdownMenu .optionItem:not(:last-child) {

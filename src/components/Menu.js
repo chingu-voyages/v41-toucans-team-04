@@ -4,6 +4,7 @@ import poster from '../assets/images/image-coffee-shop.jpg';
 import { useEffect, useState } from 'react';
 import data from '../assets/data.json';
 import Card from './Card';
+import { MdKeyboardArrowDown } from 'react-icons/md';
 
 export default function Menu(props) {
 	const [card, setCard] = useState(data.coffee);
@@ -105,7 +106,7 @@ export default function Menu(props) {
 										? 'active material-icons'
 										: 'material-icons'
 								}>
-								expand_more
+								<MdKeyboardArrowDown />
 							</span>
 						</button>
 						<ul
