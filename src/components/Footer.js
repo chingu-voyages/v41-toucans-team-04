@@ -4,7 +4,7 @@ import toucan from '../assets/images/toucan-logo.png';
 import facebook from '../assets/icons/icon-facebook.svg';
 import instagram from '../assets/icons/icon-instagram.svg';
 import twitter from '../assets/icons/icon-twitter.svg';
-export default function Footer() {
+export default function Footer({ setActive, isActive }) {
 	return (
 		<>
 			<footer className="footer">
@@ -20,19 +20,59 @@ export default function Footer() {
 						</div>
 						<ul className="footer-menu">
 							<Link to="/">
-								<li className="nav-link">Home</li>
+								<li
+									className={
+										isActive === 'home'
+											? 'nav-link active-link'
+											: 'nav-link'
+									}
+									onClick={() => setActive('home')}>
+									Home
+								</li>
 							</Link>
 							<Link to="/about">
-								<li className="nav-link">About</li>
+								<li
+									className={
+										isActive === 'about'
+											? 'nav-link active-link'
+											: 'nav-link'
+									}
+									onClick={() => setActive('about')}>
+									About
+								</li>
 							</Link>
 							<Link to="/menu">
-								<li className="nav-link">Menu</li>
+								<li
+									className={
+										isActive === 'menu'
+											? 'nav-link active-link'
+											: 'nav-link'
+									}
+									onClick={() => setActive('menu')}>
+									Menu
+								</li>
 							</Link>
 							<Link to="/shop">
-								<li className="nav-link">Shop</li>
+								<li
+									className={
+										isActive === 'shop'
+											? 'nav-link active-link'
+											: 'nav-link'
+									}
+									onClick={() => setActive('shop')}>
+									Shop
+								</li>
 							</Link>
 							<Link to="/plan">
-								<li className="nav-link">Plans</li>
+								<li
+									className={
+										isActive === 'plan'
+											? 'nav-link active-link'
+											: 'nav-link'
+									}
+									onClick={() => setActive('plan')}>
+									Plan
+								</li>
 							</Link>
 						</ul>
 					</div>
