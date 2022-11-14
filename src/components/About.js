@@ -79,36 +79,36 @@ const About = () => {
 							<img src={us} alt="us address" />
 							<h6>United States</h6>
 							<p>
-								street <br />
-								town
+								100 10th Ave, <br />
+								New York,
 								<br />
-								post code
+								NY 10011
 								<br />
-								phone
+								(212) 110-2020
 							</p>
 						</div>
 						<div className="info-item">
 							<img src={ca} alt="ca address" />
 							<h6>Canada</h6>
 							<p>
-								street <br />
-								town
+								125 John St, <br />
+								Toronto,
 								<br />
-								post code
+								ON M5V 2E2
 								<br />
-								phone
+								416-160-2020
 							</p>
 						</div>
 						<div className="info-item">
 							<img src={uk} alt="uk address" />
 							<h6>United Kingdom</h6>
 							<p>
-								street <br />
-								town
+								35 King's Rd, <br />
+								London,
 								<br />
-								post code
+								SW3 4NB
 								<br />
-								phone
+								20 1200 2020
 							</p>
 						</div>
 					</div>
