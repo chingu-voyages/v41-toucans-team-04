@@ -40,7 +40,7 @@ export default function Quiz({ addToCart }) {
 					</button>
 				</div>
 			) : (
-				<div>
+				<div className="order-quiz">
 					<p className="order-step"> {data[step].step}</p>
 					<h2 className="order-header"> {data[step].question}</h2>
 					<div className="order-items">
